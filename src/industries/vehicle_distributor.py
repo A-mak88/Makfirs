@@ -13,7 +13,7 @@ industry = IndustryTertiary(id='vehicle_distributor',
                             nearby_station_name='string(STR_STATION_VEHICLE_DISTRIBUTOR)',
                             fund_cost_multiplier='8')
 
-industry.economy_variations['STEELTOWN'].enabled = True
+#industry.economy_variations['STEELTOWN'].enabled = True
 
 industry.add_tile(id='vehicle_distributor_tile_1',
                   location_checks=TileLocationChecks(

@@ -1,7 +1,7 @@
 from industry import IndustryTertiary, TileLocationChecks
 
 industry = IndustryTertiary(id='food_market',
-                            accept_cargo_types=['FOOD', 'FRUT', 'BEER'],
+                            accept_cargo_types=['FOOD', 'FRUT', 'BEER', 'FISH', 'MNSP', 'ELEC'],
                             prod_cargo_types=[],
                             prob_in_game='12',
                             prob_map_gen='24',
@@ -15,7 +15,7 @@ industry = IndustryTertiary(id='food_market',
                             nearby_station_name='string(STR_STATION_TOWN_3)',
                             fund_cost_multiplier='15')
 
-
+industry.economy_variations['MAK_TEST'].enabled = True
 
 industry.add_tile(id='food_market_tile_1',
                   location_checks=TileLocationChecks(require_road_adjacent=True))

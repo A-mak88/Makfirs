@@ -1,10 +1,10 @@
 from industry import IndustryPrimaryPort, TileLocationChecks
 
 industry = IndustryPrimaryPort(id='port',
-                               accept_cargo_types=[],
-                               prod_cargo_types_with_multipliers=[],
-                               prob_in_game='2',
-                               prob_map_gen='1',
+                               accept_cargo_types=['FOOD', 'FRUT', 'BEER', 'ELEC', 'MNSP', 'PAPR', 'MAIL', 'LVST'],
+                               prod_cargo_types_with_multipliers=[('ENSP', 19), ('FMSP', 7), ('RFPR', 19)],
+                               prob_in_game='20',
+                               prob_map_gen='10',
                                map_colour='186',
                                special_flags=['IND_FLAG_BUILT_ON_WATER'],
                                location_checks=dict(same_type_distance=16),
@@ -15,9 +15,7 @@ industry = IndustryPrimaryPort(id='port',
                                override_default_construction_states=True)
 
 industry.economy_variations['MAK_TEST'].enabled = True
-industry.economy_variations['MAK_TEST'].accept_cargo_types = ['GOOD', 'FOOD']
-industry.economy_variations['MAK_TEST'].prod_cargo_types_with_multipliers = [('ENSP', 19), ('FMSP', 7), ('RFPR', 19)]
-industry.economy_variations['MAK_TEST'].prob_map_gen = '10'
+
 
 #industry.economy_variations['BASIC_ARCTIC'].enabled = True
 #industry.economy_variations['BASIC_ARCTIC'].accept_cargo_types = ['PAPR', 'ZINC', 'FERT']

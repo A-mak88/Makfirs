@@ -12,7 +12,7 @@ industry = IndustryPrimaryExtractive(id='peatlands',
                                      nearby_station_name='string(STR_IND_PEATLANDS)',
                                      fund_cost_multiplier='210')
 
-industry.economy_variations['BASIC_ARCTIC'].enabled = True
+#industry.economy_variations['BASIC_ARCTIC'].enabled = True
 
 # 2 tiles for this industry: pit outer tile cannot be on slopes; pit inner tiles and processor tiles can be
 # cases for both tiles ensure that tiles can only be built at same height as north tile

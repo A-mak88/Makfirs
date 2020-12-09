@@ -11,8 +11,8 @@ industry = IndustrySecondary(id='assembly_plant',
                              nearby_station_name='string(STR_STATION_AUTOMOTIVE)',
                              fund_cost_multiplier='145')
 
-industry.economy_variations['STEELTOWN'].enabled = True
-industry.economy_variations['STEELTOWN'].prob_in_game = '1' # low chance of build during gameplay
+#industry.economy_variations['STEELTOWN'].enabled = True
+#industry.economy_variations['STEELTOWN'].prob_in_game = '1' # low chance of build during gameplay
 
 industry.add_tile(id='assembly_plant_tile_1',
                   animation_length=71,

@@ -3,7 +3,7 @@ from industry import IndustrySecondary, TileLocationChecks
 industry = IndustrySecondary(id='fishing_harbour',
                              accept_cargos_with_input_ratios=[('FISH', 6), ('PASS', 1), ('ELEC', 1)],
                              combined_cargos_boost_prod=True,
-                             prod_cargo_types_with_output_ratios=[('FOOD', 8)],
+                             prod_cargo_types_with_output_ratios=[('FOOD', 6), ('GRVL', 1), ('FICR', 1)],
                              prob_in_game='10',
                              prob_map_gen='10',
                              map_colour='169',

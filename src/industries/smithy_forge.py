@@ -1,8 +1,8 @@
 from industry import IndustrySecondary, TileLocationChecks
 
 industry = IndustrySecondary(id='smithy_forge',
-                             accept_cargos_with_input_ratios=[('STEL', 8)],
-                             prod_cargo_types_with_output_ratios=[('ENSP', 4), ('FMSP', 4)],
+                             accept_cargos_with_input_ratios=[('METL', 8), ('RFPR', 4), ('ELEC', 2)],
+                             prod_cargo_types_with_output_ratios=[('ENSP', 4), ('FMSP', 4), ('RCYC', 2)],
                              prob_in_game='2',
                              prob_map_gen='5',
                              map_colour='143',
@@ -12,6 +12,7 @@ industry = IndustrySecondary(id='smithy_forge',
                              fund_cost_multiplier='63',
                              expiry_year=1948)
 
+industry.economy_variations['MAK_TEST'].enabled = True
 
 industry.add_tile(id='smithy_forge_tile_1',
                   animation_length=47,

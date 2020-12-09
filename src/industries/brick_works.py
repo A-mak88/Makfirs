@@ -1,9 +1,9 @@
 from industry import IndustrySecondary, TileLocationChecks
 
 industry = IndustrySecondary(id='brick_works',
-                             accept_cargos_with_input_ratios=[('COAL', 2), ('SAND', 2), ('CLAY', 4)],
+                             accept_cargos_with_input_ratios=[('COAL', 2), ('SAND', 2), ('CLAY', 4), ('ELEC', 1)],
                              combined_cargos_boost_prod=True,
-                             prod_cargo_types_with_output_ratios=[('BDMT', 8)],
+                             prod_cargo_types_with_output_ratios=[('BDMT', 8), ('RCYC', 4)], #cement instead?
                              prob_in_game='3',
                              prob_map_gen='5',
                              map_colour='183',
@@ -12,6 +12,7 @@ industry = IndustrySecondary(id='brick_works',
                              nearby_station_name='string(STR_STATION_KILNS)',
                              fund_cost_multiplier='120')
 
+industry.economy_variations['MAK_TEST'].enabled = True
 
 industry.add_tile(id='brick_works_tile_1',
                   animation_length=7,

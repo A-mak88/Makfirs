@@ -1,7 +1,7 @@
 from industry import IndustrySecondary, TileLocationChecks
 
 industry = IndustrySecondary(id='sawmill',
-                             accept_cargos_with_input_ratios=[('WOOD', 6), ('WATR', 1), ('FMSP', 1)],
+                             accept_cargos_with_input_ratios=[('WOOD', 6), ('WATR', 1), ('FMSP', 1), ('ELEC', 1)],
                              combined_cargos_boost_prod=True,
                              prod_cargo_types_with_output_ratios=[('WDPR', 8), ('PASS', 1)],
                              prob_in_game='5',

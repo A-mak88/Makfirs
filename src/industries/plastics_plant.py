@@ -1,8 +1,8 @@
 from industry import IndustrySecondary, TileLocationChecks
 
 industry = IndustrySecondary(id='plastics_plant',
-                             accept_cargos_with_input_ratios=[('CHLO', 4), ('C2H4', 4)],
-                             prod_cargo_types_with_output_ratios=[('PLAS', 3), ('COAT', 3)],
+                             accept_cargos_with_input_ratios=[('PAPR', 6), ('FICR', 6), ('ELEC', 1), ('WATR', 1)], #('CHLO', 4), ('C2H4', 4)
+                             prod_cargo_types_with_output_ratios=[('GOOD', 2), ('MNSP', 4),], #('PLAS', 3), ('COAT', 3)
                              combined_cargos_boost_prod=True,
                              prob_in_game='3',
                              prob_map_gen='5',
@@ -12,7 +12,7 @@ industry = IndustrySecondary(id='plastics_plant',
                              fund_cost_multiplier='125',
                              intro_year='1900')
 
-###industry.economy_variations['BETTER_LIVING_THROUGH_CHEMISTRY'].enabled = True
+industry.economy_variations['MAK_TEST'].enabled = True
 
 industry.add_tile(id='plastics_plant_tile_1',
                   location_checks=TileLocationChecks(require_effectively_flat=True,

@@ -13,7 +13,7 @@ industry = IndustryPrimaryOrganic(id='herding_coop',
                                   nearby_station_name='string(STR_STATION_HERDING_COOP)',
                                   fund_cost_multiplier='88')
 
-industry.economy_variations['BASIC_ARCTIC'].enabled = True
+#industry.economy_variations['BASIC_ARCTIC'].enabled = True
 
 industry.add_tile(id='herding_coop_tile_1',
                   animation_length=71,

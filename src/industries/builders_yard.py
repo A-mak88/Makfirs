@@ -1,7 +1,7 @@
 from industry import IndustryTertiary, TileLocationChecks
 
 industry = IndustryTertiary(id='builders_yard',
-                            accept_cargo_types=['CMNT', 'PIPE', 'STSE'],
+                            accept_cargo_types=['BDMT', 'ELEC', 'MNSP', 'PASS', 'GLAS'],
                             prod_cargo_types=[],
                             prob_in_game='12',
                             prob_map_gen='18',
@@ -13,14 +13,14 @@ industry = IndustryTertiary(id='builders_yard',
                             nearby_station_name='string(STR_STATION_MERCHANTS_LANE)',
                             fund_cost_multiplier='16')
 
-###industry.economy_variations['BETTER_LIVING_THROUGH_CHEMISTRY'].enabled = True
+industry.economy_variations['MAK_TEST'].enabled = True
 
-industry.economy_variations['STEELTOWN'].enabled = True
-industry.economy_variations['STEELTOWN'].prob_in_game = '6'
-industry.economy_variations['STEELTOWN'].prob_map_gen = '9'
+#industry.economy_variations['STEELTOWN'].enabled = True
+#industry.economy_variations['STEELTOWN'].prob_in_game = '6'
+#industry.economy_variations['STEELTOWN'].prob_map_gen = '9'
 
-industry.economy_variations['IN_A_HOT_COUNTRY'].enabled = True
-industry.economy_variations['IN_A_HOT_COUNTRY'].prob_map_gen = '14'
+#industry.economy_variations['IN_A_HOT_COUNTRY'].enabled = True
+#industry.economy_variations['IN_A_HOT_COUNTRY'].prob_map_gen = '14'
 #industry.economy_variations['IN_A_HOT_COUNTRY'].accept_cargo_types = ['CMNT', 'WDPR']
 
 industry.add_tile(id='builders_yard_tile_1',

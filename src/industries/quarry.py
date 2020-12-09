@@ -1,7 +1,7 @@
 from industry import IndustryPrimaryExtractive, TileLocationChecks
 
 industry = IndustryPrimaryExtractive(id='quarry',
-                                     prod_cargo_types_with_multipliers=[('SAND', 14), ('LIME', 14)],
+                                     prod_cargo_types_with_multipliers=[('SAND', 14), ('GRVL', 14)],
                                      prob_in_game='4',
                                      prob_map_gen='7',
                                      map_colour='194',
@@ -12,13 +12,13 @@ industry = IndustryPrimaryExtractive(id='quarry',
                                      nearby_station_name='string(STR_IND_QUARRY)',
                                      fund_cost_multiplier='210')
 
-###industry.economy_variations['BETTER_LIVING_THROUGH_CHEMISTRY'].enabled = True
+industry.economy_variations['MAK_TEST'].enabled = True
 
-industry.economy_variations['STEELTOWN'].enabled = True
-industry.economy_variations['STEELTOWN'].prod_cargo_types_with_multipliers = [('SAND', 14), ('LIME', 14)]
+#industry.economy_variations['STEELTOWN'].enabled = True
+#industry.economy_variations['STEELTOWN'].prod_cargo_types_with_multipliers = [('SAND', 14), ('LIME', 14)]
 
-industry.economy_variations['IN_A_HOT_COUNTRY'].enabled = True
-industry.economy_variations['IN_A_HOT_COUNTRY'].prod_cargo_types_with_multipliers = [('SAND', 14), ('GRVL', 14)]
+#industry.economy_variations['IN_A_HOT_COUNTRY'].enabled = True
+#industry.economy_variations['IN_A_HOT_COUNTRY'].prod_cargo_types_with_multipliers = [('SAND', 14), ('GRVL', 14)]
 #industry.economy_variations['IN_A_HOT_COUNTRY'].prod_cargo_types_with_multipliers = [('LIME', 16)]
 
 # 2 tiles for this industry: pit outer tile cannot be on slopes; pit inner tiles and processor tiles can be

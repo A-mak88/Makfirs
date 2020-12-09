@@ -1,9 +1,9 @@
 from industry import IndustrySecondary, TileLocationChecks
 
 industry = IndustrySecondary(id='iron_works',
-                             accept_cargos_with_input_ratios=[('IORE', 3), ('WOOD', 3), ('SAND', 2)],
+                             accept_cargos_with_input_ratios=[('IORE', 3), ('WOOD', 3), ('SAND', 2), ('ELEC', 1), ('WATR', 1)],
                              combined_cargos_boost_prod=True,
-                             prod_cargo_types_with_output_ratios=[('STEL', 8)],
+                             prod_cargo_types_with_output_ratios=[('METL', 6), ('RCYC', 1), ('WATR', 1)],
                              prob_in_game='3',
                              prob_map_gen='5',
                              map_colour='194',
@@ -12,7 +12,7 @@ industry = IndustrySecondary(id='iron_works',
                              fund_cost_multiplier='69',
                              expiry_year=1901)
 
-
+industry.economy_variations['MAK_TEST'].enabled = True
 # not animated tiles
 industry.add_tile(id='iron_works_tile_1',
                   location_checks=TileLocationChecks(disallow_industry_adjacent=True))
@@ -57,19 +57,16 @@ spriteset_5 = industry.add_spriteset(
     sprites=[(500, 10, 64, 70, -31, -39)],
 )
 spriteset_iron_pigs_anim = industry.add_spriteset(
-    sprites=[(220, 10, 64, 70, -31, -39), (290, 10, 64, 70, -31, -39), (360, 10, 64, 70, -31, -39)],
-    animation_rate=1
+    sprites=[(220, 10, 64, 70, -31, -39)],
 )
 spriteset_ground_pigs = industry.add_spriteset(
     type='cobble',
     # autofills number of frames to match another spriteset which is animated etc (can get frame count from the other spriteset if defined already)
-    num_sprites_to_autofill=len(spriteset_iron_pigs_anim.sprites),
-)
+    )
 spriteset_ground_overlay_pigs = industry.add_spriteset(
     type='empty',
     # autofills number of frames to match another spriteset which is animated etc (can get frame count from the other spriteset if defined already)
-    num_sprites_to_autofill=len(spriteset_iron_pigs_anim.sprites),
-)
+    )
 sprite_smoke = industry.add_smoke_sprite(
     smoke_type='dark_smoke_small',
     xoffset=0,

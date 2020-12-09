@@ -13,7 +13,7 @@ industry = IndustrySecondary(id='pyrite_smelter',
                              nearby_station_name='string(STR_STATION_SMELTER)',
                              fund_cost_multiplier='120')
 
-industry.economy_variations['BASIC_ARCTIC'].enabled = True
+#industry.economy_variations['BASIC_ARCTIC'].enabled = True
 
 industry.add_tile(id='pyrite_smelter_tile_1',
                   animation_length=7,

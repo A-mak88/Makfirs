@@ -1,8 +1,8 @@
 from industry import IndustrySecondary, TileLocationChecks
 
 industry = IndustrySecondary(id='chemical_plant',
-                             accept_cargos_with_input_ratios=[('OIL_', 4), ('NITR', 4)],
-                             prod_cargo_types_with_output_ratios=[('RFPR', 8)],
+                             accept_cargos_with_input_ratios=[('OIL_', 4), ('WATR', 4), ('ELEC', 1), ('MNSP', 1), ('PASS', 0)],
+                             prod_cargo_types_with_output_ratios=[('RFPR', 4), ('WATR', 4), ('RCYC', 1), ('PASS', 1)],
                              combined_cargos_boost_prod=True,
                              prob_in_game='3',
                              prob_map_gen='5',
@@ -14,11 +14,11 @@ industry = IndustrySecondary(id='chemical_plant',
                              nearby_station_name='string(STR_STATION_HEAVY_INDUSTRY_2)',
                              fund_cost_multiplier='170')
 
-industry.economy_variations['BASIC_TROPIC'].enabled = True
+industry.economy_variations['MAK_TEST'].enabled = True
 
-industry.economy_variations['BASIC_ARCTIC'].enabled = True
-industry.economy_variations['BASIC_ARCTIC'].accept_cargos_with_input_ratios = [('SULP', 2), ('PHOS', 2), ('NH3_', 2), ('POTA', 2)]
-industry.economy_variations['BASIC_ARCTIC'].prod_cargo_types_with_output_ratios = [('FERT', 4), ('BOOM', 4)]
+#industry.economy_variations['BASIC_ARCTIC'].enabled = True
+#industry.economy_variations['BASIC_ARCTIC'].accept_cargos_with_input_ratios = [('SULP', 2), ('PHOS', 2), ('NH3_', 2), ('POTA', 2)]
+#industry.economy_variations['BASIC_ARCTIC'].prod_cargo_types_with_output_ratios = [('FERT', 4), ('BOOM', 4)]
 
 # should be Specialty Chemicals Plant, and should also accept ACID??
 # also this should not be forced to be near port in BLTC

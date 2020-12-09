@@ -35,18 +35,18 @@ from cargos import ammonium_nitrate
 ammonium_nitrate.cargo.register()
 """
 
-"""
+
 from cargos import bauxite
 bauxite.cargo.register()
-"""
+
 
 
 #from cargos import beans
 #beans.cargo.register()
 
 
-#from cargos import building_materials
-#building_materials.cargo.register()
+from cargos import building_materials
+building_materials.cargo.register()
 
 """
 from cargos import carbon_black
@@ -85,8 +85,8 @@ chromite_ore.cargo.register()
 """
 
 
-#from cargos import clay
-#clay.cargo.register()
+from cargos import clay
+clay.cargo.register()
 
 #from cargos import cleaning_agents
 #cleaning_agents.cargo.register()
@@ -177,22 +177,22 @@ from cargos import furniture
 furniture.cargo.register()
 """
 
-#from cargos import glass
-#glass.cargo.register()
+from cargos import glass
+glass.cargo.register()
 
 from cargos import goods
 goods.cargo.register()
 
-#from cargos import grain
-#grain.cargo.register()
+from cargos import grain
+grain.cargo.register()
 
 """ BLTC
 from cargos import hydrochloric_acid
 hydrochloric_acid.cargo.register()
 """
 
-#from cargos import iron_ore
-#iron_ore.cargo.register()
+from cargos import iron_ore
+iron_ore.cargo.register()
 
 #from cargos import kaolin
 #kaolin.cargo.register()
@@ -220,10 +220,10 @@ from cargos import manganese
 manganese.cargo.register()
 """
 
-"""
+
 from cargos import metal
 metal.cargo.register()
-"""
+
 
 """ BLTC
 from cargos import methanol
@@ -250,16 +250,14 @@ nickel.cargo.register()
 #from cargos import nuts
 #nuts.cargo.register()
 
-#from cargos import oil
-#oil.cargo.register()
+from cargos import oil
+oil.cargo.register()
 
 #from cargos import oxygen
 #oxygen.cargo.register()
 
-""" BLTC
 from cargos import packaging
 packaging.cargo.register()
-"""
 
 #from cargos import paints_and_coatings
 #paints_and_coatings.cargo.register()
@@ -273,8 +271,8 @@ passengers.cargo.register()
 #from cargos import peat
 #peat.cargo.register()
 
-#from cargos import petrol
-#petrol.cargo.register()
+from cargos import petrol
+petrol.cargo.register()
 
 
 #from cargos import phosphate
@@ -295,10 +293,8 @@ from cargos import pipe
 pipe.cargo.register()
 """
 
-""" BLTC
 from cargos import plant_fibres
 plant_fibres.cargo.register()
-"""
 
 #from cargos import plastics
 #plastics.cargo.register()
@@ -333,8 +329,8 @@ recyclables.cargo.register()
 #from cargos import rubber
 #rubber.cargo.register()
 
-#from cargos import sand
-#sand.cargo.register()
+from cargos import sand
+sand.cargo.register()
 
 #from cargos import salt
 #salt.cargo.register()
@@ -366,8 +362,8 @@ steam.cargo.register()
 #from cargos import steel_wire_rod
 #steel_wire_rod.cargo.register()
 
-#from cargos import stone
-#stone.cargo.register()
+from cargos import stone
+stone.cargo.register()
 
 #from cargos import sulphur
 #sulphur.cargo.register()
@@ -377,10 +373,8 @@ from cargos import sulphuric_acid
 sulphuric_acid.cargo.register()
 """
 
-"""
 from cargos import sugar_beet
 sugar_beet.cargo.register()
-"""
 
 """ BLTC
 from cargos import textiles
@@ -423,8 +417,8 @@ water.cargo.register()
 from cargos import wood
 wood.cargo.register()
 
-#from cargos import wool
-#wool.cargo.register()
+from cargos import wool
+wool.cargo.register()
 
 """ IAHC
 from cargos import yarn

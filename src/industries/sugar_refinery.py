@@ -1,9 +1,9 @@
 from industry import IndustrySecondary, TileLocationChecks
 
 industry = IndustrySecondary(id='sugar_refinery',
-                             accept_cargos_with_input_ratios=[('MNSP', 3), ('SGBT', 5)],
+                             accept_cargos_with_input_ratios=[('MNSP', 3), ('SGBT', 5), ('ELEC', 1), ('WATR', 2), ('PASS', 1)],
                              combined_cargos_boost_prod=True,
-                             prod_cargo_types_with_output_ratios=[('FOOD', 8)],
+                             prod_cargo_types_with_output_ratios=[('FOOD', 8), ('PASS', 1), ('RCYC', 1)],
                              prob_in_game='3',
                              prob_map_gen='5',
                              map_colour='83',
@@ -12,8 +12,8 @@ industry = IndustrySecondary(id='sugar_refinery',
                              nearby_station_name='string(STR_STATION_SUGAR_COMPANY)',
                              fund_cost_multiplier='140')
 
-# deliberately not in BLTC, requires sugar beet, which is too climate-specific for BLTC
-# industry.economy_variations['BETTER_LIVING_THROUGH_CHEMISTRY'].enabled = True
+
+industry.economy_variations['MAK_TEST'].enabled = True
 
 industry.add_tile(id='sugar_refinery_tile_1',
                   animation_length=7,

@@ -11,7 +11,7 @@ industry = IndustryPrimaryExtractive(id='nitrate_mine',
                                      nearby_station_name='string(STR_STATION_SALTPETER_WORKS)',
                                      fund_cost_multiplier='180')
 
-industry.economy_variations['BASIC_TROPIC'].enabled = True
+#industry.economy_variations['BASIC_TROPIC'].enabled = True
 
 industry.add_tile(id='nitrate_mine_tile_1',
                   animation_length=7,

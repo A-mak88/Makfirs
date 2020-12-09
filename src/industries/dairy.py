@@ -1,9 +1,9 @@
 from industry import IndustrySecondary, TileLocationChecks
 
 industry = IndustrySecondary(id='dairy',
-                             accept_cargos_with_input_ratios=[('MILK', 6)],
+                             accept_cargos_with_input_ratios=[('MILK', 5), ('MNSP', 2), ('GLAS', 2), ('ELEC', 1)],
                              combined_cargos_boost_prod=True,
-                             prod_cargo_types_with_output_ratios=[('FOOD', 8)],
+                             prod_cargo_types_with_output_ratios=[('FOOD', 8), ('RCYC', 2)],
                              prob_in_game='1',
                              prob_map_gen='1',
                              map_colour='169',
@@ -15,7 +15,6 @@ industry = IndustrySecondary(id='dairy',
                              fund_cost_multiplier='45')
 
 industry.economy_variations['MAK_TEST'].enabled = True
-industry.economy_variations['MAK_TEST'].accept_cargos_with_input_ratios = [('MILK', 6)]
 
 ###industry.economy_variations['BETTER_LIVING_THROUGH_CHEMISTRY'].enabled = True
 ###industry.economy_variations['BETTER_LIVING_THROUGH_CHEMISTRY'].accept_cargos_with_input_ratios = [('MILK', 6), ('MNSP', 2)]

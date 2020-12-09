@@ -1,19 +1,21 @@
 from industry import IndustryPrimaryExtractive, TileLocationChecks
 
 industry = IndustryPrimaryExtractive(id='clay_pit',
-                                     prod_cargo_types_with_multipliers=[('KAOL', 16)],
+                                     prod_cargo_types_with_multipliers=[('CLAY', 16)],
                                      prob_in_game='4',
                                      prob_map_gen='7',
                                      map_colour='45',
                                      # allow longer distance on clustering than usual, and more clusters, as industry is hard to locate
-                                     location_checks=dict(cluster=[90, 4]),
+                                     location_checks=dict(cluster=[90, 6]),
                                      prospect_chance='0.75',
                                      name='string(STR_IND_CLAY_PIT)',
                                      nearby_station_name='string(STR_STATION_PIT)',
                                      fund_cost_multiplier='200')
 
-industry.economy_variations['BASIC_TEMPERATE'].enabled = True
-industry.economy_variations['BASIC_TEMPERATE'].prod_cargo_types_with_multipliers = [('KAOL', 16)]
+industry.economy_variations['MAK_TEST'].enabled = True
+
+#industry.economy_variations['BASIC_TEMPERATE'].enabled = True
+#industry.economy_variations['BASIC_TEMPERATE'].prod_cargo_types_with_multipliers = [('KAOL', 16)]
 
 # 2 tiles for this industry: pit outer tile cannot be on slopes; pit inner tiles and processor tiles can be
 # cases for both tiles ensure that tiles can only be built at same height as north tile

@@ -1,9 +1,9 @@
 from industry import IndustrySecondary, TileLocationChecks
 
 industry = IndustrySecondary(id='lumber_yard',
-                             accept_cargos_with_input_ratios=[('WDPR', 6), ('WATR', 1)], #, ('COAT', 2)
+                             accept_cargos_with_input_ratios=[('WDPR', 5), ('RFPR', 2), ('ELEC', 1)], #, ('COAT', 2)
                              combined_cargos_boost_prod=True,
-                             prod_cargo_types_with_output_ratios=[('GOOD', 8), ('RFPR', 2)],
+                             prod_cargo_types_with_output_ratios=[('GOOD', 8), ('BDMT', 2)],
                              prob_in_game='3',
                              prob_map_gen='2',
                              map_colour='43',

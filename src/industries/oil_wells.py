@@ -1,7 +1,7 @@
 from industry import IndustryPrimaryExtractive, TileLocationChecks
 
 industry = IndustryPrimaryExtractive(id='oil_wells',
-                                     prod_cargo_types_with_multipliers=[('OIL_', 28)],
+                                     prod_cargo_types_with_multipliers=[('OIL_', 28), ('WATR', 12)],
                                      prob_in_game='6',
                                      prob_map_gen='8',
                                      map_colour='151',
@@ -11,8 +11,8 @@ industry = IndustryPrimaryExtractive(id='oil_wells',
                                      nearby_station_name='string(STR_STATION_WELLS)',
                                      intro_year=1830)
 
-industry.economy_variations['BASIC_TROPIC'].enabled = True
-industry.economy_variations['IN_A_HOT_COUNTRY'].enabled = True
+industry.economy_variations['MAK_TEST'].enabled = True
+#industry.economy_variations['IN_A_HOT_COUNTRY'].enabled = True
 
 industry.add_tile(id='oil_wells_tile_1',
                   location_checks=TileLocationChecks(disallow_industry_adjacent=True),

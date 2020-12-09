@@ -1,7 +1,7 @@
 from industry import IndustryPrimaryPort, TileLocationChecks
 
 industry = IndustryPrimaryPort(id='trading_post',
-                               accept_cargo_types=['FOOD', 'GOOD', 'BEER'],
+                               accept_cargo_types=['FOOD', 'GOOD', 'BEER', 'MAIL', 'ELEC'],
                                prod_cargo_types_with_multipliers=[],
                                prob_in_game='2',
                                prob_map_gen='6',

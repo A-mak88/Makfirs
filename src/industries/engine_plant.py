@@ -12,8 +12,8 @@ industry = IndustrySecondary(id='engine_plant',
                              fund_cost_multiplier='120',
                              intro_year=1762)
 
-industry.economy_variations['STEELTOWN'].enabled = True
-industry.economy_variations['STEELTOWN'].prob_in_game = '0' # do not build during gameplay
+#industry.economy_variations['STEELTOWN'].enabled = True
+#industry.economy_variations['STEELTOWN'].prob_in_game = '0' # do not build during gameplay
 
 industry.add_tile(id='engine_plant_tile_1',
                   animation_length=47,

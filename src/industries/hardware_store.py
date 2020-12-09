@@ -1,7 +1,7 @@
 from industry import IndustryTertiary, TileLocationChecks
 
 industry = IndustryTertiary(id='hardware_store',
-                            accept_cargo_types=[],
+                            accept_cargo_types=['GOOD', 'BDMT', 'GLAS'],
                             prod_cargo_types=[],
                             prob_in_game='18',
                             prob_map_gen='24',
@@ -15,7 +15,7 @@ industry = IndustryTertiary(id='hardware_store',
                             nearby_station_name='string(STR_STATION_TOWN_1)',
                             fund_cost_multiplier='15')
 
-industry.economy_variations['IN_A_HOT_COUNTRY'].enabled = True
+industry.economy_variations['MAK_TEST'].enabled = True
 ###industry.economy_variations['BETTER_LIVING_THROUGH_CHEMISTRY'].enabled = True
 
 industry.add_tile(id='hardware_store_tile_1',

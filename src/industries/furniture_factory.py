@@ -1,14 +1,16 @@
 from industry import IndustrySecondary, TileLocationChecks
 
 industry = IndustrySecondary(id='furniture_factory',
-                             accept_cargos_with_input_ratios=[('WDPR', 6), ('COAT', 2)],
-                             prod_cargo_types_with_output_ratios=[('FURN', 8)],
+                             accept_cargos_with_input_ratios=[('WDPR', 6), ('GLAS', 4), ('MNSP', 2), ('RFPR', 2), ('ELEC', 1)], #('COAT', 2)
+                             prod_cargo_types_with_output_ratios=[('GOOD', 8), ('RCYC', 4), ('PASS', 1)], #('FURN', 8)
                              prob_in_game='7',
                              prob_map_gen='8',
                              map_colour='186',
                              name='string(STR_IND_FURNITURE_FACTORY)',
                              nearby_station_name='string(STR_STATION_JOINERS_SHOP)',
                              fund_cost_multiplier='95')
+
+industry.economy_variations['MAK_TEST'].enabled = True
 
 ###industry.economy_variations['BETTER_LIVING_THROUGH_CHEMISTRY'].enabled = True
 

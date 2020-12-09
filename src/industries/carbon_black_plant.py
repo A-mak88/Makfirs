@@ -14,8 +14,8 @@ industry = IndustrySecondary(id='carbon_black_plant',
                              nearby_station_name='string(STR_STATION_SOOT_FURNACE)',
                              fund_cost_multiplier='120')
 
-industry.economy_variations['STEELTOWN'].enabled = True
-industry.economy_variations['STEELTOWN'].prob_in_game = '0' # do not build during gameplay
+#industry.economy_variations['STEELTOWN'].enabled = True
+#industry.economy_variations['STEELTOWN'].prob_in_game = '0' # do not build during gameplay
 
 industry.add_tile(id='carbon_black_plant_tile_1',
                   animation_length=7,

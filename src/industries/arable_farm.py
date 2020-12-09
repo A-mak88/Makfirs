@@ -1,11 +1,11 @@
 from industry import IndustryPrimaryOrganic, TileLocationChecks
 
 industry = IndustryPrimaryOrganic(id='arable_farm',
-                                  prod_cargo_types_with_multipliers=[('GRAI', 14), ('BEAN', 14)],
+                                  prod_cargo_types_with_multipliers=[('GRAI', 14), ('SGBT', 14)],
                                   prob_in_game='4',
-                                  prob_map_gen='11',
+                                  prob_random='11',
                                   map_colour='209',
-                                  special_flags=['IND_FLAG_PLANT_FIELDS_PERIODICALLY', 'IND_FLAG_PLANT_FIELDS_WHEN_BUILT'],
+                                  spec_flags='bitmask(IND_FLAG_PLANT_FIELDS_PERIODICALLY, IND_FLAG_PLANT_FIELDS_WHEN_BUILT)',
                                   location_checks=dict(cluster=[72, 4]),
                                   prospect_chance='0.75',
                                   name='string(STR_IND_ARABLE_FARM)',
@@ -14,11 +14,13 @@ industry = IndustryPrimaryOrganic(id='arable_farm',
                                   fund_cost_multiplier='55',
                                   graphics_change_dates=[1928])
 
-industry.economy_variations['BASIC_TROPIC'].enabled = True
-industry.economy_variations['BASIC_TROPIC'].prod_cargo_types_with_multipliers = [('GRAI', 14), ('BEAN', 14)]
+industry.economy_variations['MAK_TEST'].enabled = True
 
-industry.economy_variations['IN_A_HOT_COUNTRY'].enabled = True
-industry.economy_variations['IN_A_HOT_COUNTRY'].prod_cargo_types_with_multipliers = [('CASS', 14), ('NUTS', 14)]
+#industry.economy_variations['BASIC_TROPIC'].enabled = True
+#industry.economy_variations['BASIC_TROPIC'].prod_cargo_types_with_multipliers = [('GRAI', 14), ('BEAN', 14)]
+
+#industry.economy_variations['IN_A_HOT_COUNTRY'].enabled = True
+#industry.economy_variations['IN_A_HOT_COUNTRY'].prod_cargo_types_with_multipliers = [('CASS', 14), ('NUTS', 14)]
 
 industry.add_tile(id='arable_farm_tile_1',
                   location_checks=TileLocationChecks(disallow_slopes=True,

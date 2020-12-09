@@ -5,12 +5,13 @@ industry = IndustryPrimaryOrganic(id='sheep_farm',
                                   prob_in_game='4',
                                   prob_map_gen='11',
                                   map_colour='168',
-                                  location_checks=dict(cluster=[72, 4]),
+                                  location_checks=dict(cluster=[72, 6]),
                                   prospect_chance='0.75',
                                   name='string(STR_IND_SHEEPFARM)',
                                   nearby_station_name='string(STR_STATION_SHEEP_FOLD)',
                                   fund_cost_multiplier='45')
 
+industry.economy_variations['MAK_TEST'].enabled = True
 
 industry.add_tile(id='sheep_farm_tile_1',
                   location_checks=TileLocationChecks(disallow_coast=True,
