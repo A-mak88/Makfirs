@@ -3,16 +3,15 @@ from industry import IndustryPrimaryOrganic, TileLocationChecks
 industry = IndustryPrimaryOrganic(id='orchard_piggery',
                                   prod_cargo_types_with_multipliers=[('FRUT', 1), ('LVST', 1)],
                                   map_colour='85',
-                                  prob_in_game='4',
-                                  prob_map_gen='10',
+                                  prob_in_game='20',
+                                  prob_map_gen='20',
                                   prospect_chance='0.75',
                                   name='string(STR_IND_ORCHARD_PIGGERY)',
                                   extra_text_fund='string(STR_FUND_ORCHARD_PIGGERY)',
-                                  location_checks=dict(industry_max_distance=['dairy_farm', 10], same_type_distance=2),
+                                  location_checks=dict(industry_max_distance=['arable_farm', 10], industry_min_distance=['arable_farm', 2], same_type_distance=2),
                                   nearby_station_name='string(STR_STATION_ORCHARDS)',
                                   fund_cost_multiplier='54',
-                                  override_default_construction_states=True,
-                                  intro_year='1')
+                                  override_default_construction_states=True)
 
 industry.economy_variations['MAK_TEST'].enabled = True
 

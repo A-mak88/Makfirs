@@ -2,7 +2,7 @@ from industry import IndustryPrimaryExtractive, TileLocationChecks
 
 industry = IndustryPrimaryExtractive(id='coal_pit',
                                      prod_cargo_types_with_multipliers=[('COAL', 2), ('RCYC', 1)],
-                                     prob_in_game='10',
+                                     prob_in_game='20',
                                      prob_map_gen='20',
                                      map_colour='1',
                                      # Here my first creation, this primary industry is to spawn very close to coal mine creating a 'sub' industry effect.
@@ -11,7 +11,7 @@ industry = IndustryPrimaryExtractive(id='coal_pit',
                                      name='string(STR_IND_COAL_PIT)',
                                      nearby_station_name='string(STR_STATION_PIT)',
                                      fund_cost_multiplier='200',
-                                     intro_year=1800)
+                                     intro_year=1750)
 
 industry.economy_variations['MAK_TEST'].enabled = True
 

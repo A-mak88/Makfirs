@@ -183,8 +183,8 @@ furniture.cargo.register()
 from cargos import goods
 goods.cargo.register()
 
-#from cargos import grain
-#grain.cargo.register()
+from cargos import grain
+grain.cargo.register()
 
 """ BLTC
 from cargos import hydrochloric_acid

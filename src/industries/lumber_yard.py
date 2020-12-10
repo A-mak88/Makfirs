@@ -7,7 +7,7 @@ industry = IndustrySecondary(id='lumber_yard',
                              prob_in_game='3',
                              prob_map_gen='2',
                              map_colour='43',
-                             location_checks=dict(industry_min_distance=[('sawmill', 500), ('junk_yard', 500)], same_type_distance=500),
+                             location_checks=dict(industry_min_distance=[('sawmill', 500), ('supply_yard', 500)], same_type_distance=500),
                              name='string(STR_IND_LUMBER_YARD)',
                              nearby_station_name='string(STR_STATION_CREOSOTING)',
                              fund_cost_multiplier='35',
@@ -20,7 +20,8 @@ industry.economy_variations['MAK_TEST'].enabled = True
 
 # non-animated tile, allowed on slopes
 industry.add_tile(id='lumber_yard_tile_1',
-                  location_checks=TileLocationChecks(disallow_industry_adjacent=True))
+                  location_checks=TileLocationChecks(disallow_industry_adjacent=False,
+                                                     require_houses_nearby=True))
 
 # animated kiln-building tile, graphics break if built on slopes
 industry.add_tile(id='lumber_yard_tile_2',
@@ -28,6 +29,7 @@ industry.add_tile(id='lumber_yard_tile_2',
                   animation_looping=True,
                   animation_speed=2,
                   location_checks=TileLocationChecks(require_effectively_flat=True,
+                                                     require_houses_nearby=True,
                                                      disallow_industry_adjacent=False))
 
 sprite_ground = industry.add_sprite(

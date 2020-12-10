@@ -1,7 +1,7 @@
 from industry import IndustrySecondary, TileLocationChecks
 
 industry = IndustrySecondary(id='brewery',
-                             accept_cargos_with_input_ratios=[('MNSP', 3), ('FRUT', 6), ('WATR', 2), ('ELEC', 2), ('MAIL', 0), ('PASS', 0)], #('GRAI', 4), Chemicals? Cleaning agents?
+                             accept_cargos_with_input_ratios=[('GRAI', 4), ('FRUT', 6), ('WATR', 2), ('MNSP', 3),('ELEC', 2), ('MAIL', 0), ('PASS', 0)], #Chemicals? Cleaning agents?
                              combined_cargos_boost_prod=True,
                              prod_cargo_types_with_output_ratios=[('BEER', 8), ('RCYC', 1), ('MAIL', 1), ('PASS', 8)], #'MAIZ' Maize/Corn?
                              prob_in_game='2',

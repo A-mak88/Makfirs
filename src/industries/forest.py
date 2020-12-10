@@ -6,15 +6,14 @@ industry = IndustryPrimaryOrganic(id='forest',
                                   prob_map_gen='50',
                                   map_colour='83',
                                   prospect_chance='0.75',
-                                  location_checks=dict(industry_max_distance=['sawmill', 150], industry_min_distance=['coal_mine', 500], same_type_distance=10, cluster=[100, 8]),
+                                  location_checks=dict(industry_max_distance=['sawmill', 150], industry_min_distance=['coal_mine', 500], same_type_distance=10, cluster=[500, 10]),
                                   name='TTD_STR_INDUSTRY_NAME_FOREST',
                                   extra_text_fund='string(STR_FUND_FOREST)',
                                   fund_cost_multiplier='95',
                                   substitute='INDUSTRYTYPE_FOREST',
                                   nearby_station_name='string(STR_STATION_FOREST)',
                                   graphics_change_dates=[1935, 1990],
-                                  override_default_construction_states=True,
-                                  intro_year='1')
+                                  override_default_construction_states=True)
 
 industry.economy_variations['MAK_TEST'].enabled = True
 #industry.economy_variations['BASIC_ARCTIC'].prod_cargo_types_with_multipliers = [('WOOD', 24)]

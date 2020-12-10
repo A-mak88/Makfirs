@@ -7,7 +7,7 @@ industry = IndustrySecondary(id='recycling_plant',
                              prob_map_gen='1',
                              map_colour='164',
                              #I eat the poop
-                             location_checks=dict(industry_max_distance=['basic_oxygen_furnace', 50], industry_min_distance=[('basic_oxygen_furnace', 10), ('coke_oven', 500), ('power_plant', 500)], same_type_distance=500),
+                             location_checks=dict(industry_max_distance=['basic_oxygen_furnace', 50], industry_min_distance=[('basic_oxygen_furnace', 10), ('supply_yard', 500), ('coke_oven', 500), ('power_plant', 500)], same_type_distance=500),
                              name='string(STR_IND_RECYCLING_PLANT)',
                              nearby_station_name='string(STR_STATION_INDUSTRY_ESTATE_1)',
                              fund_cost_multiplier='118',

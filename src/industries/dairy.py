@@ -1,6 +1,7 @@
 from industry import IndustrySecondary, TileLocationChecks
 
 industry = IndustrySecondary(id='dairy',
+                             intro_year=1900,
                              accept_cargos_with_input_ratios=[('MILK', 5), ('ELEC', 1)], #, ('MNSP', 2), ('GLAS', 2)
                              combined_cargos_boost_prod=True,
                              prod_cargo_types_with_output_ratios=[('FOOD', 8), ('RCYC', 2)],
@@ -9,11 +10,10 @@ industry = IndustrySecondary(id='dairy',
                              map_colour='169',
                              special_flags=['IND_FLAG_MILITARY_HELICOPTER_CAN_EXPLODE'],
                              # it's rare to force co-location of secondaries, but this one is near dairy farm by design
-                             location_checks=dict(same_type_distance=1000),
+                             location_checks=dict(same_type_distance=1000, industry_min_distance=[('dairy_farm', 600)]),
                              name='string(STR_IND_DAIRY)',
                              nearby_station_name='string(STR_STATION_DAIRY_LANE)',
-                             fund_cost_multiplier='45',
-                             intro_year=1900)
+                             fund_cost_multiplier='45')
 
 industry.economy_variations['MAK_TEST'].enabled = True
 

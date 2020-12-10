@@ -1,9 +1,10 @@
 from industry import IndustryPrimaryOrganic, TileLocationChecks
 
 industry = IndustryPrimaryOrganic(id='dairy_farm',
-                                  prod_cargo_types_with_multipliers=[('LVST', 1), ('MILK', 1)],
-                                  prob_in_game='3',
-                                  prob_map_gen='25',
+                                  intro_year='1900',
+                                  prod_cargo_types_with_multipliers=[('MILK', 16), ('WATR', 1)], #waste?
+                                  prob_in_game='5',
+                                  prob_map_gen='5',
                                   map_colour='209',
                                   # fields aren't 100% appropriate, but without them there are zero farm fields planted in Basic Temperate economy
                                   special_flags=['IND_FLAG_PLANT_FIELDS_PERIODICALLY', 'IND_FLAG_PLANT_FIELDS_WHEN_BUILT'],
@@ -12,8 +13,7 @@ industry = IndustryPrimaryOrganic(id='dairy_farm',
                                   name='string(STR_IND_DAIRY_FARM)',
                                   extra_text_fund='string(STR_FUND_DAIRY_FARM)',
                                   nearby_station_name='string(STR_STATION_FARM_2)',
-                                  fund_cost_multiplier='60',
-                                  intro_year='1900')
+                                  fund_cost_multiplier='60')
 
 industry.economy_variations['MAK_TEST'].enabled = True
 ###industry.economy_variations['BETTER_LIVING_THROUGH_CHEMISTRY'].enabled = True

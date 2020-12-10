@@ -8,7 +8,7 @@ industry = IndustrySecondary(id='coke_oven',
                              prob_map_gen='1',
                              map_colour='183',
                              # is 100 tiles too little or too much for coal mine travel? Would coke be transported by train to boiler or by car?
-                             location_checks=dict(industry_min_distance=[('basic_oxygen_furnace', 500), ('coal_mine', 100)], same_type_distance=500, industry_max_distance=['coal_mine', 200]),
+                             location_checks=dict(industry_min_distance=[('basic_oxygen_furnace', 500), ('coal_mine', 100)], same_type_distance=500, industry_max_distance=['coal_mine', 200]), #papermill distance? cokemill wants woodchips from papermill either for dodgy stuff or something I dunno?
                              name='string(STR_IND_COKE_OVEN)',
                              nearby_station_name='string(STR_STATION_BANK_TOP)',
                              fund_cost_multiplier='120',

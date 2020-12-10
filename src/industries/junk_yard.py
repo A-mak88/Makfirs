@@ -5,7 +5,7 @@ industry = IndustryTownProducerPopulationDependent(id='junk_yard',
                                      prob_in_game='3',
                                      prob_map_gen='7',
                                      map_colour='64',
-                                     location_checks=dict(industry_min_distance=[('sawmill', 500), ('lumber_yard', 500)], same_type_distance=500),
+                                     location_checks=dict(industry_min_distance=[('lumber_yard', 500), ('supply_yard', 500)], same_type_distance=500),
                                      # no industry location checks for junk yard, by design, maybe; maybe not.
                                      prospect_chance='0.75',
                                      name='string(STR_IND_JUNKYARD)',

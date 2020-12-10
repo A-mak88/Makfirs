@@ -65,7 +65,7 @@ for industry in registered_industries:
 
 incompatible_industries = {}
 for industry in registered_industries:
-    incompatible = []
+    incompatible = [] #In my case, I want to set incompatabilities manually as I plan to add more industry check tables and such anyways.
     """
     # special case supplies, pax, mail to exclude them (not useful in checks)
     excluded_cargos = ["ENSP", "FMSP", "PASS", "MAIL", "ELEC", "WATR"]

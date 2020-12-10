@@ -46,10 +46,11 @@ Port - Year 1 - PASS/CARGO
 Forest - Wood - Year 1 - ProdOrganic - Wood, Pass?, RCYC
 Coal_mine (inland) - Year 1
 
-Farm - livestock? Sugarbeet? Grain?- Year 1
+Arable Farm - Grain - Year 1
+Orchard and piggery - fruit+lvst - year 1 - linked to Arable farm
+NEED MORE FARMS
 Fruit plantation - Year 1, link to sand pit?
 coffe/tea plantation - ?
-Orchard and piggery - fruit+lvst - year 1?
 
 Fish Farm (near coast edge) (inland?) - Year1? - Makes fish, Mail.
 Fishing Grounds (ocean) - Year1 - Makes fish, Pass.
@@ -90,5 +91,16 @@ Dairy - 1900?
 Recycling Depot -1978
 Recycling Plant -1978
 
+********************************
 
+Early Chains:
+Coal->Town
+Wood(forest)->Lumber (sawmill) -> Goods -> Town/industries.
+Wood -> Lumber -> Building Materials -> Eng+farms -> Wood/raw
+Wood -> Packaging (papermill, low amount?) -> Engineering+farmsupply -> Wood/raw
+Fish -> Food -> Town/industries
+Livestock -> Food ->etc
+Grain -> Food
+Fruit -> Food?
+Grain+Fruit+Water -> Alcohol
 

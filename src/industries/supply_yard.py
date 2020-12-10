@@ -1,13 +1,13 @@
 from industry import IndustrySecondary, TileLocationChecks
 
 industry = IndustrySecondary(id='supply_yard',
-                             accept_cargos_with_input_ratios=[('SCMT', 4), ('WDPR', 4)],
-                             prod_cargo_types_with_output_ratios=[('ENSP', 4), ('FMSP', 4)],
+                             accept_cargos_with_input_ratios=[('SCMT', 4), ('MNSP', 4), ('BDMT', 1)], #METL?
+                             prod_cargo_types_with_output_ratios=[('ENSP', 1), ('FMSP', 1)],
                              prob_in_game='3',
                              prob_map_gen='5',
                              map_colour='143',
                              name='string(STR_IND_SUPPLY_YARD)',
-                             location_checks=dict(industry_min_distance=[('sawmill', 500), ('junk_yard', 500), ('recycling_plant', 500)], same_type_distance=500),
+                             location_checks=dict(industry_min_distance=[('lumber_yard', 500), ('paper_mill', 500), ('stockyard', 2)], industry_max_distance=['stockyard', 10], same_type_distance=500),
                              nearby_station_name='string(STR_STATION_BASE)',
                              fund_cost_multiplier='110',
                              intro_year=1594)
@@ -24,7 +24,8 @@ industry.add_tile(id='supply_yard_tile_1',
                   animation_looping=True,
                   animation_speed=2,
                   location_checks=TileLocationChecks(require_effectively_flat=True,
-                                                     disallow_industry_adjacent=True))
+                                                     require_houses_nearby=True,
+                                                     disallow_industry_adjacent=False))
 
 spriteset_ground = industry.add_spriteset(
     type='concrete',

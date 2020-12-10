@@ -12,8 +12,8 @@ registered_industries = []
 #ammonia_plant.industry.register()
 
 
-#from industries import arable_farm
-#arable_farm.industry.register()
+from industries import arable_farm
+arable_farm.industry.register()
 
 #from industries import assembly_plant
 #assembly_plant.industry.register()
