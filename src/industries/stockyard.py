@@ -10,7 +10,8 @@ industry = IndustrySecondary(id='stockyard',
                              special_flags=['IND_FLAG_MILITARY_HELICOPTER_CAN_EXPLODE'],
                              name='string(STR_IND_STOCKYARD)',
                              nearby_station_name='string(STR_STATION_ANIMALS)',
-                             fund_cost_multiplier='115')
+                             fund_cost_multiplier='115',
+                             intro_year=1) #Tavern before this, need to make tavern hopefully.
 
 
 industry.economy_variations['MAK_TEST'].enabled = True

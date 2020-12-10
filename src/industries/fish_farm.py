@@ -14,7 +14,8 @@ industry = IndustryPrimaryOrganic(id='fish_farm',
                                   prospect_chance='0.75',
                                   name='string(STR_IND_FISH_FARM)',
                                   nearby_station_name='string(STR_STATION_SEAFOOD)',
-                                  fund_cost_multiplier='88')
+                                  fund_cost_multiplier='88',
+                                  intro_year=1)
 
 industry.economy_variations['MAK_TEST'].enabled = True
 

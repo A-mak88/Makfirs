@@ -13,7 +13,8 @@ industry = IndustryPrimaryOrganic(id='forest',
                                   substitute='INDUSTRYTYPE_FOREST',
                                   nearby_station_name='string(STR_STATION_FOREST)',
                                   graphics_change_dates=[1935, 1990],
-                                  override_default_construction_states=True)
+                                  override_default_construction_states=True,
+                                  intro_year='1')
 
 industry.economy_variations['MAK_TEST'].enabled = True
 #industry.economy_variations['BASIC_ARCTIC'].prod_cargo_types_with_multipliers = [('WOOD', 24)]

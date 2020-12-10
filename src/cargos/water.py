@@ -15,6 +15,6 @@ cargo = Cargo(id='water',
               items_of_cargo='TTD_STR_QUANTITY_WATER',
               penalty_lowerbound='22',
               single_penalty_length='44',
-              price_factor=152,
+              price_factor=50,
               capacity_multiplier='1',
               icon_indices=(1, 5))

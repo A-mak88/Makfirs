@@ -10,7 +10,7 @@ industry = IndustrySecondary(id='supply_yard',
                              location_checks=dict(industry_min_distance=[('sawmill', 500), ('junk_yard', 500), ('recycling_plant', 500)], same_type_distance=500),
                              nearby_station_name='string(STR_STATION_BASE)',
                              fund_cost_multiplier='110',
-                             intro_year=1800)
+                             intro_year=1594)
 
 ###industry.economy_variations['BETTER_LIVING_THROUGH_CHEMISTRY'].enabled = True
 ###industry.economy_variations['BETTER_LIVING_THROUGH_CHEMISTRY'].accept_cargos_with_input_ratios = [('VEHI', 8), ('PETR', 8)]

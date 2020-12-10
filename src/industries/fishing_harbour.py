@@ -3,7 +3,7 @@ from industry import IndustrySecondary, TileLocationChecks
 industry = IndustrySecondary(id='fishing_harbour',
                              accept_cargos_with_input_ratios=[('FISH', 6), ('PASS', 1), ('ELEC', 1)],
                              combined_cargos_boost_prod=True,
-                             prod_cargo_types_with_output_ratios=[('FOOD', 6), ('GRVL', 1), ('FICR', 1)],
+                             prod_cargo_types_with_output_ratios=[('FOOD', 6)], #, ('GRVL', 1), ('FICR', 1)
                              prob_in_game='10',
                              prob_map_gen='10',
                              map_colour='169',
@@ -12,7 +12,8 @@ industry = IndustrySecondary(id='fishing_harbour',
                              name='string(STR_IND_FISHING_HARBOUR)',
                              nearby_station_name='string(STR_STATION_FISHMARKET)',
                              fund_cost_multiplier='150',
-                             override_default_construction_states=True)
+                             override_default_construction_states=True,
+                             intro_year=1)
 
 industry.economy_variations['MAK_TEST'].enabled = True
 #industry.economy_variations['BASIC_TROPIC'].enabled = True

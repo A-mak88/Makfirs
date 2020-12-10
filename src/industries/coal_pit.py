@@ -10,7 +10,8 @@ industry = IndustryPrimaryExtractive(id='coal_pit',
                                      prospect_chance='0.75',
                                      name='string(STR_IND_COAL_PIT)',
                                      nearby_station_name='string(STR_STATION_PIT)',
-                                     fund_cost_multiplier='200')
+                                     fund_cost_multiplier='200',
+                                     intro_year=1800)
 
 industry.economy_variations['MAK_TEST'].enabled = True
 

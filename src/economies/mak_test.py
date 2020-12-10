@@ -8,38 +8,38 @@ economy = Economy(id = "MAK_TEST",
                   cargos = ['passengers', #Firs
                             'coal', #Firs
                             'mail', #Firs
-                            'clay', #Firs
-                            'iron_ore', #Firs
-                            'goods', #Firs
-                            'wood', #Firs
-                            'sand', #Firs
-                            'stone', #Firs
+                            'electricity',
                             'water',
-                            'coke',
-                            'food', #Firs
-                            'plant_fibres', #Firs
-                            'fruits',  #Firs
-                            'grain', #Firs
-                            'sugar_beet', #Firs
-                            'livestock', #Firs
-                            'wool',
-                            'milk', #Firs
-                            'oil', #Firs
-                            'alcohol', #Firs
-                            'chemicals', #Firs
+                            'goods', #Firs
                             'fish', #Firs
                             'steam',
-                            'lumber', #Firs
-                            'bauxite', #Firs
-                            'recyclables', #Firs
-                            'scrap_metal', #Firs
-                            'metal',#Firs
-                            'glass',
+                            'wood', #Firs
+                            'coke',
                             'paper',
+                            'food', #Firs
+                            #'plant_fibres', #Firs
+                            'fruits',  #Firs
+                            #'grain', #Firs
+                            #'sugar_beet', #Firs
+                            'livestock', #Firs
+                            #'wool',
+                            'milk', #Firs
+                            #'oil', #Firs
+                            #'clay', #Firs
+                            #'stone', #Firs
+                            #'iron_ore', #Firs
+                            'recyclables', #Firs
+                            'chemicals', #Firs
+                            #'bauxite', #Firs
+                            'lumber', #Firs
+                            'scrap_metal', #Firs
+                            #'metal',#Firs
+                            #'glass',
+                            'alcohol', #Firs
                             'packaging', #Firs
-                            'petrol', #Firs
                             'engineering_supplies', #firs
                             'farm_supplies',
                             'building_materials', #Firs
-                            'electricity'])
+                            #'petrol' #Firs
+                            ])
 

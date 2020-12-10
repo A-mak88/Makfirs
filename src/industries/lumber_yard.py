@@ -10,7 +10,8 @@ industry = IndustrySecondary(id='lumber_yard',
                              location_checks=dict(industry_min_distance=[('sawmill', 500), ('junk_yard', 500)], same_type_distance=500),
                              name='string(STR_IND_LUMBER_YARD)',
                              nearby_station_name='string(STR_STATION_CREOSOTING)',
-                             fund_cost_multiplier='35')
+                             fund_cost_multiplier='35',
+                             intro_year=1594)
 
 industry.economy_variations['MAK_TEST'].enabled = True
 

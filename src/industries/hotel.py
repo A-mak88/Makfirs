@@ -11,7 +11,8 @@ industry = IndustryTertiary(id='hotel',
                             prospect_chance='0.75',
                             name='string(STR_IND_HOTEL)',
                             nearby_station_name='string(STR_STATION_BAR_GRILL_AND_ROOMS)',
-                            fund_cost_multiplier='101')
+                            fund_cost_multiplier='101',
+                            intro_year=1769)
 
 industry.economy_variations['MAK_TEST'].enabled = True
 #industry.economy_variations['BASIC_TROPIC'].enabled = True

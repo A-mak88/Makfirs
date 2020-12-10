@@ -11,7 +11,8 @@ industry = IndustryPrimaryOrganic(id='orchard_piggery',
                                   location_checks=dict(industry_max_distance=['dairy_farm', 10], same_type_distance=2),
                                   nearby_station_name='string(STR_STATION_ORCHARDS)',
                                   fund_cost_multiplier='54',
-                                  override_default_construction_states=True)
+                                  override_default_construction_states=True,
+                                  intro_year='1')
 
 industry.economy_variations['MAK_TEST'].enabled = True
 

@@ -10,7 +10,8 @@ industry = IndustrySecondary(id='sawmill',
                              location_checks=dict(industry_min_distance=[('coal_mine', 400), ('paper_mill', 200)], same_type_distance=500),
                              name='TTD_STR_INDUSTRY_NAME_SAWMILL',
                              nearby_station_name='string(STR_STATION_MILL)',
-                             fund_cost_multiplier='97')
+                             fund_cost_multiplier='97',
+                             intro_year='1') #change after creating sawpit hopefully.
 
 industry.economy_variations['MAK_TEST'].enabled = True
 

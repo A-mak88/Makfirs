@@ -1,7 +1,7 @@
 from industry import IndustryPrimaryPort, TileLocationChecks
 
 industry = IndustryPrimaryPort(id='bulk_terminal',
-                               accept_cargo_types=[('PASS'), ('FOOD'), ('ELEC'), ('BDMT'), ('BEER'), ('PETR')],
+                               accept_cargo_types=[('PASS'), ('FOOD'), ('ELEC'), ('BDMT'), ('BEER')], #('PETR')
                                prod_cargo_types_with_multipliers=[('WATR', 10), ('PASS', 1), ('GOOD', 10), ('MAIL', 1)],
                                prob_in_game='2',
                                prob_map_gen='2',
@@ -12,7 +12,8 @@ industry = IndustryPrimaryPort(id='bulk_terminal',
                                name='string(STR_IND_BULK_TERMINAL)',
                                nearby_station_name='string(STR_STATION_INDUSTRY_HARBOUR_1)',
                                fund_cost_multiplier='152',
-                               override_default_construction_states=True)
+                               override_default_construction_states=True,
+                               intro_year=1)
 
 industry.economy_variations['MAK_TEST'].enabled = True
 #industry.economy_variations['IN_A_HOT_COUNTRY'].accept_cargo_types = ['MNO2', 'FECR', 'RUBR']

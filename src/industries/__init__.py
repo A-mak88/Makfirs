@@ -3,8 +3,8 @@ registered_industries = []
 # keep these alphabetised for ease of maintaining
 
 
-from industries import aluminium_plant
-aluminium_plant.industry.register()
+#from industries import aluminium_plant
+#aluminium_plant.industry.register()
 
 
 
@@ -12,8 +12,8 @@ aluminium_plant.industry.register()
 #ammonia_plant.industry.register()
 
 
-from industries import arable_farm
-arable_farm.industry.register()
+#from industries import arable_farm
+#arable_farm.industry.register()
 
 #from industries import assembly_plant
 #assembly_plant.industry.register()
@@ -26,8 +26,8 @@ basic_oxygen_furnace.industry.register()
 #biorefinery.industry.register()
 
 
-from industries import blast_furnace
-blast_furnace.industry.register()
+#from industries import blast_furnace
+#blast_furnace.industry.register()
 
 #from industries import body_plant
 #body_plant.industry.register()
@@ -36,12 +36,12 @@ from industries import brewery
 brewery.industry.register()
 
 
-from industries import brick_works
-brick_works.industry.register()
+##!from industries import brick_works
+##!brick_works.industry.register()
 
 
-from industries import builders_yard
-builders_yard.industry.register()
+#from industries import builders_yard
+#builders_yard.industry.register()
 
 from industries import bulk_terminal
 bulk_terminal.industry.register()
@@ -49,11 +49,11 @@ bulk_terminal.industry.register()
 #from industries import carbon_black_plant
 #carbon_black_plant.industry.register()
 
-from industries import cement_plant
-cement_plant.industry.register()
+#from industries import cement_plant
+#cement_plant.industry.register()
 
-from industries import chemical_plant
-chemical_plant.industry.register()
+#from industries import chemical_plant
+#chemical_plant.industry.register()
 
 #from industries import chlor_alkali_plant
 #chlor_alkali_plant.industry.register()
@@ -68,8 +68,8 @@ chemical_plant.industry.register()
 #chromite_mine.industry.register()
 
 
-from industries import clay_pit
-clay_pit.industry.register()
+##!from industries import clay_pit
+##!clay_pit.industry.register()
 
 from industries import coal_pit
 coal_pit.industry.register()
@@ -109,8 +109,8 @@ dairy_farm.industry.register()
 #from industries import diamond_mine
 #diamond_mine.industry.register()
 
-from industries import dredging_site
-dredging_site.industry.register()
+#from industries import dredging_site
+#dredging_site.industry.register()
 
 #from industries import electric_arc_furnace
 #electric_arc_furnace.industry.register()
@@ -152,12 +152,12 @@ dredging_site.industry.register()
 #fischer_tropsch_plant.industry.register()
 
 
-from industries import flour_mill
-flour_mill.industry.register()
+#from industries import flour_mill
+#flour_mill.industry.register()
 
 
-from industries import food_market
-food_market.industry.register()
+#from industries import food_market
+#food_market.industry.register()
 
 
 #from industries import food_processor
@@ -175,22 +175,22 @@ fishing_harbour.industry.register()
 from industries import forest
 forest.industry.register()
 
-from industries import fruit_plantation
-fruit_plantation.industry.register()
+#from industries import fruit_plantation
+#fruit_plantation.industry.register()
 
 
-from industries import furniture_factory
-furniture_factory.industry.register()
+#from industries import furniture_factory
+#furniture_factory.industry.register()
 
 
 from industries import general_store
 general_store.industry.register()
 
-from industries import glass_works
-glass_works.industry.register()
+#from industries import glass_works
+#glass_works.industry.register()
 
-from industries import hardware_store
-hardware_store.industry.register()
+#from industries import hardware_store
+#hardware_store.industry.register()
 
 from industries import hotel
 hotel.industry.register()
@@ -198,12 +198,12 @@ hotel.industry.register()
 #from industries import herding_coop
 #herding_coop.industry.register()
 
-from industries import iron_ore_mine
-iron_ore_mine.industry.register()
+#from industries import iron_ore_mine
+#iron_ore_mine.industry.register()
 
 
-from industries import iron_works
-iron_works.industry.register()
+#from industries import iron_works
+#iron_works.industry.register()
 
 
 from industries import junk_yard
@@ -214,8 +214,8 @@ junk_yard.industry.register()
 #latex_processor.industry.register()
 
 
-from industries import lime_kiln
-lime_kiln.industry.register()
+#from industries import lime_kiln
+#lime_kiln.industry.register()
 
 #from industries import limestone_mine
 #limestone_mine.industry.register()
@@ -239,22 +239,22 @@ lumber_yard.industry.register()
 #from industries import manganese_mine
 #manganese_mine.industry.register()
 
-from industries import metal_workshop
-metal_workshop.industry.register()
+#from industries import metal_workshop
+#metal_workshop.industry.register()
 
 #from industries import nitrate_mine
 #nitrate_mine.industry.register()
 
-from industries import oil_wells
-oil_wells.industry.register()
+#from industries import oil_wells
+#oil_wells.industry.register()
 
 
-from industries import oil_refinery
-oil_refinery.industry.register()
+#from industries import oil_refinery
+#oil_refinery.industry.register()
 
 
-from industries import oil_rig
-oil_rig.industry.register()
+#from industries import oil_rig
+#oil_rig.industry.register()
 
 from industries import orchard_piggery
 orchard_piggery.industry.register()
@@ -265,8 +265,8 @@ paper_mill.industry.register()
 #from industries import peatlands
 #peatlands.industry.register()
 
-from industries import petrol_pump
-petrol_pump.industry.register()
+#from industries import petrol_pump
+#petrol_pump.industry.register()
 
 #from industries import phosphate_mine
 #phosphate_mine.industry.register()
@@ -277,8 +277,8 @@ petrol_pump.industry.register()
 
 
  # should be one of the polymer plants (pvc?)
-from industries import plastics_plant
-plastics_plant.industry.register()
+#from industries import plastics_plant
+#plastics_plant.industry.register()
 
 
 
@@ -289,8 +289,8 @@ plastics_plant.industry.register()
 #polypropylene_plant.industry.register()
 
 
-from industries import port
-port.industry.register()
+#from industries import port
+#port.industry.register()
 
 from industries import power_plant
 power_plant.industry.register()
@@ -304,8 +304,8 @@ power_plant.industry.register()
 #from industries import pyrite_smelter
 #pyrite_smelter.industry.register()
 
-from industries import quarry
-quarry.industry.register()
+#from industries import quarry
+#quarry.industry.register()
 
 #from industries import ranch
 #ranch.industry.register()
@@ -327,8 +327,8 @@ from industries import sawmill
 sawmill.industry.register()
 
 
-from industries import sheep_farm
-sheep_farm.industry.register()
+#from industries import sheep_farm
+#sheep_farm.industry.register()
 
 #from industries import sheet_and_pipe_mill
 #sheet_and_pipe_mill.industry.register()
@@ -343,8 +343,8 @@ sheep_farm.industry.register()
 #from industries import solvay_plant
 #solvay_plant.industry.register()
 
-from industries import smithy_forge
-smithy_forge.industry.register()
+#from industries import smithy_forge
+#smithy_forge.industry.register()
 
 #from industries import steel_mill
 #steel_mill.industry.register()
@@ -352,8 +352,8 @@ smithy_forge.industry.register()
 from industries import stockyard
 stockyard.industry.register()
 
-from industries import sugar_refinery
-sugar_refinery.industry.register()
+#from industries import sugar_refinery
+#sugar_refinery.industry.register()
 
 #from industries import sulphuric_acid_plant
 #sulphuric_acid_plant.industry.register()
@@ -361,14 +361,14 @@ sugar_refinery.industry.register()
 from industries import supply_yard
 supply_yard.industry.register()
 
-from industries import textile_mill
-textile_mill.industry.register()
+#from industries import textile_mill
+#textile_mill.industry.register()
 
 #from industries import tinplate_works
 #tinplate_works.industry.register()
 
-from industries import trading_post
-trading_post.industry.register()
+#from industries import trading_post
+#trading_post.industry.register()
 
 #from industries import tyre_plant
 #tyre_plant.industry.register()

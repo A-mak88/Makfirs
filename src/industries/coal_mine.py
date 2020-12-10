@@ -10,7 +10,8 @@ industry = IndustrySecondary(id='coal_mine',
                                      location_checks=dict(industry_min_distance=['forest', 500], cluster=[200, 2], same_type_distance=300),
                                      name='TTD_STR_INDUSTRY_NAME_COAL_MINE',
                                      nearby_station_name='string(STR_STATION_COLLIERY)',
-                                     fund_cost_multiplier='252')
+                                     fund_cost_multiplier='252',
+                                     intro_year=1)
 
 
 industry.economy_variations['MAK_TEST'].enabled = True

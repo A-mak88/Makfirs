@@ -12,7 +12,8 @@ industry = IndustryPrimaryOrganic(id='dairy_farm',
                                   name='string(STR_IND_DAIRY_FARM)',
                                   extra_text_fund='string(STR_FUND_DAIRY_FARM)',
                                   nearby_station_name='string(STR_STATION_FARM_2)',
-                                  fund_cost_multiplier='60')
+                                  fund_cost_multiplier='60',
+                                  intro_year='1900')
 
 industry.economy_variations['MAK_TEST'].enabled = True
 ###industry.economy_variations['BETTER_LIVING_THROUGH_CHEMISTRY'].enabled = True

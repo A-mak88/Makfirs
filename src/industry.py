@@ -1071,7 +1071,7 @@ class IndustryPrimaryExtractive(IndustryPrimary):
         Sparse subclass of IndustryPrimary, do not add much to this, it's subclassed once already
     """
     def __init__(self, **kwargs):
-        kwargs['accept_cargo_types'] = ['ENSP', 'GOOD', 'ELEC']
+        kwargs['accept_cargo_types'] = ['FOOD', 'ENSP', 'ELEC']
         kwargs['life_type'] = 'IND_LIFE_TYPE_EXTRACTIVE'
         super().__init__(**kwargs)
         self.supply_requirements = [0, 'PRIMARY', 1] # janky use of a un-named list for historical reasons (2nd item is string prefix, 3rd is multiplier of requirements parameters)
@@ -1083,7 +1083,7 @@ class IndustryPrimaryOrganic(IndustryPrimary):
         Sparse subclass of IndustryPrimary, do not add much to this, it's subclassed once already
     """
     def __init__(self, **kwargs):
-        kwargs['accept_cargo_types'] = ['FMSP', 'RFPR', 'ELEC', 'WATR']
+        kwargs['accept_cargo_types'] = ['PASS', 'WATR', 'FMSP', 'ELEC']
         kwargs['life_type'] = 'IND_LIFE_TYPE_ORGANIC'
         super().__init__(**kwargs)
         self.supply_requirements = [0, 'PRIMARY', 1] # janky use of a un-named list for historical reasons (2nd item is string prefix, 3rd is multiplier of requirements parameters)

@@ -66,6 +66,7 @@ for industry in registered_industries:
 incompatible_industries = {}
 for industry in registered_industries:
     incompatible = []
+    """
     # special case supplies, pax, mail to exclude them (not useful in checks)
     excluded_cargos = ["ENSP", "FMSP", "PASS", "MAIL", "ELEC", "WATR"]
     for cargo, prod_industries in industries_producing_cargo.items():
@@ -77,6 +78,7 @@ for industry in registered_industries:
         if cargo not in excluded_cargos:
             if industry in accept_industries:
                 incompatible.extend(industries_producing_cargo[cargo])
+     """
     incompatible_industries[industry] = set(incompatible)
 
 # guard against unused / wasted industry IDs

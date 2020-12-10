@@ -13,7 +13,7 @@ industry = IndustrySecondary(id='basic_oxygen_furnace',
                              name='string(STR_IND_BASIC_OXYGEN_FURNACE)',
                              nearby_station_name='string(STR_STATION_FURNACE)',
                              fund_cost_multiplier='160',
-                             intro_year=1882)  # intro year needs to >= power station? intro year, otherwise location restriction means no BOFs are built
+                             intro_year='1679')  # intro year needs to >= power station? intro year, otherwise location restriction means no BOFs are built
 
 industry.economy_variations['MAK_TEST'].enabled = True
 #industry.economy_variations['mak_test'].prob_in_game = '50' # 0 to what scale?

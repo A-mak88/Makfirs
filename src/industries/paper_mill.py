@@ -1,9 +1,9 @@
 from industry import IndustrySecondary, TileLocationChecks
 
 industry = IndustrySecondary(id='paper_mill',
-                             accept_cargos_with_input_ratios=[('RFPR', 2), ('WOOD', 4), ('CLAY', 2), ('ELEC', 1)],
+                             accept_cargos_with_input_ratios=[('RFPR', 3), ('WOOD', 6), ('ELEC', 1)], #('CLAY', 2), 
                              combined_cargos_boost_prod=True,
-                             prod_cargo_types_with_output_ratios=[('PAPR', 8), ('RCYC', 2)],
+                             prod_cargo_types_with_output_ratios=[('PAPR', 8), ('MNSP', 2), ('RCYC', 2)],
                              prob_in_game='3',
                              prob_map_gen='2',
                              substitute='14',
@@ -12,7 +12,8 @@ industry = IndustrySecondary(id='paper_mill',
                              fund_cost_multiplier='120',
                              nearby_station_name='string(STR_STATION_MILL)',
                              name='TTD_STR_INDUSTRY_NAME_PAPER_MILL',
-                             override='14')
+                             override='14',
+                             intro_year=1594)
 
 industry.economy_variations['MAK_TEST'].enabled = True
 #industry.economy_variations['BASIC_ARCTIC'].accept_cargos_with_input_ratios = [('KAOL', 2), ('WOOD', 4), ('SULP', 2)]
