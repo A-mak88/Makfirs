@@ -13,9 +13,9 @@ cargo = Cargo(id='recyclables',
               town_growth_multiplier='1.0',
               units_of_cargo='TTD_STR_TONS',
               items_of_cargo='string(STR_CARGO_UNIT_RECYCLABLES)',
-              penalty_lowerbound='10',
-              single_penalty_length='128',
+              penalty_lowerbound='255',
+              single_penalty_length='0',
               capacity_multiplier='1',
-              price_factor=100,
+              price_factor=10,
               icon_indices=(10, 3))
               

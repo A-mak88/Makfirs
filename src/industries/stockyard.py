@@ -1,7 +1,7 @@
 from industry import IndustrySecondary, TileLocationChecks
 
 industry = IndustrySecondary(id='stockyard',
-                             accept_cargos_with_input_ratios=[('LVST', 6), ('GRAI', 4), ('MNSP', 2), ('ELEC', 1), ('PASS', 1)],
+                             accept_cargos_with_input_ratios=[('LVST', 6), ('GRAI', 4), ('MNSP', 2), ('WATR', 2), ('ELEC', 1), ('PASS', 0)],
                              combined_cargos_boost_prod=True,
                              prod_cargo_types_with_output_ratios=[('FOOD', 8), ('PASS', 2)],
                              prob_in_game='2',
@@ -25,7 +25,7 @@ industry.add_tile(id='stockyard_tile_1',
                   animation_speed=3,
                   location_checks=TileLocationChecks(require_effectively_flat=True,
                                                      require_houses_nearby=True,
-                                                     disallow_industry_adjacent=False))
+                                                     disallow_industry_adjacent=True))
 
 spriteset_ground = industry.add_spriteset(
     type='concrete'

@@ -2,11 +2,11 @@ from industry import IndustryPrimaryOrganic, TileLocationChecks
 
 industry = IndustryPrimaryOrganic(id='arable_farm',
                                   prod_cargo_types_with_multipliers=[('GRAI', 14)], #, ('BEAN', 14)
-                                  prob_in_game='10',
-                                  prob_map_gen='10',
+                                  prob_in_game='5',
+                                  prob_map_gen='5',
                                   map_colour='209',
                                   special_flags=['IND_FLAG_PLANT_FIELDS_PERIODICALLY', 'IND_FLAG_PLANT_FIELDS_WHEN_BUILT'],
-                                  location_checks=dict(cluster=[72, 4], same_type_distance=200, industry_min_distance=['forest', 50]),
+                                  location_checks=dict(cluster=[80, 2], same_type_distance=200, industry_min_distance=['forest', 50]),
                                   prospect_chance='0.75',
                                   name='string(STR_IND_ARABLE_FARM)',
                                   extra_text_fund='string(STR_FUND_ARABLE_FARM)',

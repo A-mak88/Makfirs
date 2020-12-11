@@ -22,7 +22,7 @@ economy = Economy(id = "MAK_TEST",
                             'grain', #Firs
                             #'sugar_beet', #Firs
                             'livestock', #Firs
-                            #'wool',
+                            'wool',
                             'milk', #Firs
                             #'oil', #Firs
                             #'clay', #Firs

@@ -1,13 +1,13 @@
 from industry import IndustrySecondary, TileLocationChecks
 
 industry = IndustrySecondary(id='coal_mine',
-                                    accept_cargos_with_input_ratios=[('ELEC', 0), ('ENSP', 5), ('WATR', 8), ('RFPR', 8), ('PASS', 8), ('MAIL', 8)], 
-                                    combined_cargos_boost_prod=True,
-                                    prod_cargo_types_with_output_ratios=[('COAL', 6), ('PASS', 1), ('MAIL', 1), ('RCYC', 4)], #lower is less, equation maybe total cargo delivered this cycle (256ticks) divided by 8? 
+                                     accept_cargos_with_input_ratios=[('ELEC', 0), ('ENSP', 5), ('WATR', 8), ('RFPR', 8), ('PASS', 8), ('MAIL', 8)], 
+                                     combined_cargos_boost_prod=True,
+                                     prod_cargo_types_with_output_ratios=[('COAL', 6), ('PASS', 1), ('MAIL', 1), ('RCYC', 4)], #lower is less, equation maybe total cargo delivered this cycle (256ticks) divided by 8? 
                                      prob_in_game='4',
                                      prob_map_gen='4',
                                      map_colour='1',
-                                     location_checks=dict(industry_min_distance=['forest', 500], cluster=[200, 2], same_type_distance=300),
+                                     location_checks=dict(industry_min_distance=[('forest', 50), ('sawmill', 500), ('paper_mill', 500)], same_type_distance=300, cluster=[300, 2]),
                                      name='TTD_STR_INDUSTRY_NAME_COAL_MINE',
                                      nearby_station_name='string(STR_STATION_COLLIERY)',
                                      fund_cost_multiplier='252',

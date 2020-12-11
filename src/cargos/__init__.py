@@ -417,8 +417,8 @@ water.cargo.register()
 from cargos import wood
 wood.cargo.register()
 
-#from cargos import wool
-#wool.cargo.register()
+from cargos import wool
+wool.cargo.register()
 
 """ IAHC
 from cargos import yarn

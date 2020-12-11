@@ -1,17 +1,18 @@
-from industry import IndustryPrimaryOrganic, TileLocationChecks
+from industry import IndustrySecondary, TileLocationChecks
 
-industry = IndustryPrimaryOrganic(id='dairy_farm',
-                                  intro_year='1900',
-                                  prod_cargo_types_with_multipliers=[('MILK', 16), ('WATR', 1)], #waste?
+industry = IndustrySecondary(id='dairy_farm',
+                                  
+                                  accept_cargos_with_input_ratios=[('LVST', 6), ('GRAI', 2), ('PASS', 1), ('FMSP', 1), ('ELEC', 1)], #Petrol?
+                                  combined_cargos_boost_prod=True,
+                                  prod_cargo_types_with_output_ratios=[('MILK', 16), ('WATR', 1)],#waste?
                                   prob_in_game='5',
                                   prob_map_gen='5',
                                   map_colour='209',
                                   # fields aren't 100% appropriate, but without them there are zero farm fields planted in Basic Temperate economy
                                   special_flags=['IND_FLAG_PLANT_FIELDS_PERIODICALLY', 'IND_FLAG_PLANT_FIELDS_WHEN_BUILT'],
-                                  location_checks=dict(cluster=[20, 4]),
-                                  prospect_chance='0.75',
+                                  location_checks=dict(cluster=[20, 4], industry_min_distance=['arable_farm', 100]),
                                   name='string(STR_IND_DAIRY_FARM)',
-                                  extra_text_fund='string(STR_FUND_DAIRY_FARM)',
+                                  intro_year=1900,
                                   nearby_station_name='string(STR_STATION_FARM_2)',
                                   fund_cost_multiplier='60')
 
@@ -23,7 +24,7 @@ industry.add_tile(id='dairy_farm_tile_1',
                                                      disallow_above_snowline=True,
                                                      disallow_desert=True,
                                                      disallow_coast=True,
-                                                     disallow_industry_adjacent=False))
+                                                     disallow_industry_adjacent=True))
 
 sprite_ground = industry.add_sprite(
     sprite_number='GROUNDTILE_MUD_TRACKS'

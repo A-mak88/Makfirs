@@ -327,8 +327,8 @@ from industries import sawmill
 sawmill.industry.register()
 
 
-#from industries import sheep_farm
-#sheep_farm.industry.register()
+from industries import sheep_farm
+sheep_farm.industry.register()
 
 #from industries import sheet_and_pipe_mill
 #sheet_and_pipe_mill.industry.register()
@@ -361,8 +361,8 @@ stockyard.industry.register()
 from industries import supply_yard
 supply_yard.industry.register()
 
-#from industries import textile_mill
-#textile_mill.industry.register()
+from industries import textile_mill
+textile_mill.industry.register()
 
 #from industries import tinplate_works
 #tinplate_works.industry.register()

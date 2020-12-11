@@ -15,7 +15,7 @@ Livestock - Year 1
 Grain - Year 1
 Fruit - Year 1
 Fish - Year 1
-
+Wool - Produced year 1 but isnt usefull till year 1733
 ------------Waste----------
 Scrap Metal - year 1594? Perhaps the first in the chain of waste? This converts to metal probably, but recycling converts to it. Perhaps have scrapmetal in lower quantities?
 Recycling - Year 1978 - This is a waste product that is not manageable until mid-game. Rename to waste for early game management? Create waste and keep this for late game industries + a conversion from waste??
@@ -33,7 +33,7 @@ Electricity - 1882 - Tomake: Steam+Pass
 ************************************************************************************************************
 
 Industry Usage (127 per grf:
-current: 24 / 127
+current: 26 / 127
 Last Firs: 111/127
 
 Industry Tile Usage:
@@ -93,14 +93,22 @@ Recycling Plant -1978
 
 ********************************
 
-Early Chains:
+Early Chains (Year 1?):
 Coal->Town
 Wood(forest)->Lumber (sawmill) -> Goods -> Town/industries.
-Wood -> Lumber -> Building Materials -> Eng+farms -> Wood/raw
-Wood -> Packaging (papermill, low amount?) -> Engineering+farmsupply -> Wood/raw
-Fish -> Food -> Town/industries
-Livestock -> Food ->etc
+Fish -> Food (fishing harbor) -> Town/industries
+Livestock -> Food (stockyard) ->etc
 Grain -> Food
 Fruit -> Food?
+
 Grain+Fruit+Water -> Alcohol
+(year 1700?)
+Wood -> Lumber -> Building Materials -> Eng+farms -> Wood/raw
+Wood -> Packaging (papermill, low amount?) -> Engineering+farmsupply -> Wood/raw
+
+Wool -> Goods...
+
+
+Waste:
+Recycling -> Scrap Metal -> Metal -> building materials
 
