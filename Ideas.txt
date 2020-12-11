@@ -102,9 +102,9 @@ Recycling Plant -1978
 Early Chains (Year 1?):
 Coal->Town
 Wool -> (Trading Post)
-Fish -> Food (fishing harbor) -> Town/industries
-Livestock -> Food (stockyard) ->etc
-Grain -> Food
+Fish -> Food (fishing harbor) -> Town/industries Change to meat -> factory -> food?
+Livestock -> Food (stockyard) Change to meat -> Factory -> food?
+Grain -> Food(Mill) Change to cereal -> Factory ->food?
 Fruit -> Food?
 Grain+Fruit+Water -> Alcohol
 
