@@ -66,10 +66,10 @@ from cargos import cast_iron
 cast_iron.cargo.register()
 """
 
-"""
+
 from cargos import cement
 cement.cargo.register()
-"""
+
 
 from cargos import chemicals
 chemicals.cargo.register()
@@ -329,8 +329,8 @@ recyclables.cargo.register()
 #from cargos import rubber
 #rubber.cargo.register()
 
-#from cargos import sand
-#sand.cargo.register()
+from cargos import sand
+sand.cargo.register()
 
 #from cargos import salt
 #salt.cargo.register()
@@ -362,8 +362,8 @@ steam.cargo.register()
 #from cargos import steel_wire_rod
 #steel_wire_rod.cargo.register()
 
-#from cargos import stone
-#stone.cargo.register()
+from cargos import stone
+stone.cargo.register()
 
 #from cargos import sulphur
 #sulphur.cargo.register()

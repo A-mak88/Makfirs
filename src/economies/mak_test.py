@@ -26,10 +26,12 @@ economy = Economy(id = "MAK_TEST",
                             'milk', #Firs
                             #'oil', #Firs
                             #'clay', #Firs
-                            #'stone', #Firs
+                            'stone', #Firs
+                            'sand',
                             #'iron_ore', #Firs
                             'peat', #Dunno
                             'recyclables', #Firs
+                            'cement',
                             'chemicals', #Firs
                             #'bauxite', #Firs
                             'lumber', #Firs

@@ -1,7 +1,7 @@
 from industry import IndustryTertiary, TileLocationChecks
 
 industry = IndustryTertiary(id='builders_yard',
-                            accept_cargo_types=['BDMT', 'ELEC', 'MNSP', 'PASS', 'BEER'],
+                            accept_cargo_types=['BDMT', 'ELEC', 'MNSP', 'CMNT', 'BEER'],
                             prod_cargo_types=[],
                             prob_in_game='12',
                             prob_map_gen='18',
@@ -26,8 +26,7 @@ industry.economy_variations['MAK_TEST'].enabled = True
 industry.add_tile(id='builders_yard_tile_1',
                   location_checks=TileLocationChecks(require_houses_nearby=True,
                                                      require_effectively_flat=True,
-                                                     require_road_adjacent=True,
-                                                     disallow_industry_adjacent=True))
+                                                     disallow_industry_adjacent=False))
 
 spriteset_ground = industry.add_spriteset(
     type='concrete',

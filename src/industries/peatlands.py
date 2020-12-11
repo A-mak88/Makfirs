@@ -2,11 +2,11 @@ from industry import IndustryPrimaryExtractive, TileLocationChecks
 
 industry = IndustryPrimaryExtractive(id='peatlands',
                                      prod_cargo_types_with_multipliers=[('PEAT', 14)],
-                                     prob_in_game='4',
-                                     prob_map_gen='7',
+                                     prob_in_game='20',
+                                     prob_map_gen='20',
                                      map_colour='72',
                                      # allow longer distance on clustering than usual, and more clusters, as industry is hard to locate
-                                     location_checks=dict(cluster=[90, 4], industry_max_distance=['trading_post', 100], same_type_distance=2),
+                                     location_checks=dict(industry_max_distance=['trading_post', 100], cluster=[50, 6], same_type_distance=2),
                                      prospect_chance='0.75',
                                      name='string(STR_IND_PEATLANDS)',
                                      nearby_station_name='string(STR_IND_PEATLANDS)',
@@ -19,14 +19,13 @@ industry.economy_variations['MAK_TEST'].enabled = True
 industry.add_tile(id='peatlands_tile_1',
                   location_checks=TileLocationChecks(require_effectively_flat=True,
                                                      disallow_desert=True,
-                                                     require_coast=True,
                                                      disallow_industry_adjacent=False))
 industry.add_tile(id='peatlands_tile_2',
                   foundations='return CB_RESULT_NO_FOUNDATIONS',  # might not be needed, cargo-culted from previous code, didn't test; may be needed to stop rear foundations showing in some cases?
                   autoslope='return CB_RESULT_NO_AUTOSLOPE',
                   location_checks=TileLocationChecks(disallow_slopes=True,
                                                      disallow_desert=True,
-                                                     require_coast=True,
+                                                     require_coast=False,
                                                      disallow_industry_adjacent=False))
 
 sprite_ground = industry.add_sprite(

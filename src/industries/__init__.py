@@ -36,8 +36,8 @@ from industries import brewery
 brewery.industry.register()
 
 
-##!from industries import brick_works
-##!brick_works.industry.register()
+from industries import brick_works
+brick_works.industry.register()
 
 
 from industries import builders_yard
@@ -49,11 +49,11 @@ bulk_terminal.industry.register()
 #from industries import carbon_black_plant
 #carbon_black_plant.industry.register()
 
-#from industries import cement_plant
-#cement_plant.industry.register()
+from industries import cement_plant
+cement_plant.industry.register()
 
-#from industries import chemical_plant
-#chemical_plant.industry.register()
+from industries import chemical_plant
+chemical_plant.industry.register()
 
 #from industries import chlor_alkali_plant
 #chlor_alkali_plant.industry.register()
@@ -109,8 +109,8 @@ dairy_farm.industry.register()
 #from industries import diamond_mine
 #diamond_mine.industry.register()
 
-#from industries import dredging_site
-#dredging_site.industry.register()
+from industries import dredging_site
+dredging_site.industry.register()
 
 #from industries import electric_arc_furnace
 #electric_arc_furnace.industry.register()
@@ -304,8 +304,8 @@ power_plant.industry.register()
 #from industries import pyrite_smelter
 #pyrite_smelter.industry.register()
 
-#from industries import quarry
-#quarry.industry.register()
+from industries import quarry
+quarry.industry.register()
 
 #from industries import ranch
 #ranch.industry.register()
