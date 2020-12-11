@@ -12,7 +12,7 @@ industry = IndustrySecondary(id='coke_oven',
                              name='string(STR_IND_COKE_OVEN)',
                              nearby_station_name='string(STR_STATION_BANK_TOP)',
                              fund_cost_multiplier='120',
-                             intro_year=1817)
+                             intro_year=1709)
 
 industry.economy_variations['MAK_TEST'].enabled = True
 #industry.economy_variations['STEELTOWN'].prob_in_game = '0' # do not build during gameplay

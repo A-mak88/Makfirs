@@ -8,9 +8,10 @@ industry = IndustrySecondary(id='blast_furnace',
                              prob_map_gen='2',
                              map_colour='10',
                              name='string(STR_IND_BLAST_FURNACE)',
+                             industry_min_distance=['cement_plant', 5], industry_max_distance=['cement_plant', 40],
                              nearby_station_name='string(STR_STATION_FURNACE)',
                              fund_cost_multiplier='190',
-                             intro_year=1850)
+                             intro_year=1491)
 
 industry.economy_variations['MAK_TEST'].enabled = True
 

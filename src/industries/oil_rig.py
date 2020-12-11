@@ -13,7 +13,7 @@ industry = IndustryPrimaryExtractive(id='oil_rig',
                                      nearby_station_name='string(STR_STATION_OIL_RIG)',
                                      fund_cost_multiplier='255',
                                      override='5',
-                                     intro_year=1967)
+                                     intro_year=1859)
 
 industry.economy_variations['MAK_TEST'].enabled = True
 

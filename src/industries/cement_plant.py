@@ -8,7 +8,7 @@ industry = IndustrySecondary(id='cement_plant',
                              prob_map_gen='5',
                              map_colour='19',
                              special_flags=['IND_FLAG_MILITARY_HELICOPTER_CAN_EXPLODE'],
-                             location_checks=dict(industry_min_distance=[('chemical_plant', 500), ('brick_works', 500), ('clay_pit', 50)], same_type_distance=500),
+                             location_checks=dict(industry_min_distance=[('chemical_plant', 500), ('brick_works', 500), ('clay_pit', 50), ('stockyard', 2)], industry_max_distance=['stockyard', 10], same_type_distance=500),
                              name='string(STR_IND_CEMENT_PLANT)',
                              nearby_station_name='string(STR_STATION_SILO)',
                              fund_cost_multiplier='203')

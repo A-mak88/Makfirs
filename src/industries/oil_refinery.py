@@ -11,7 +11,7 @@ industry = IndustrySecondary(id='oil_refinery',
                              name='TTD_STR_INDUSTRY_NAME_OIL_REFINERY',
                              location_checks=dict(industry_min_distance=['blast_furnace', 2], industry_max_distance=['blast_furnace', 10], same_type_distance=1000),
                              nearby_station_name='string(STR_STATION_REFINERY)',
-                             intro_year=1830)
+                             intro_year=1856)
 
 industry.economy_variations['MAK_TEST'].enabled = True
 

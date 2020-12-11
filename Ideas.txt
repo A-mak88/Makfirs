@@ -98,7 +98,7 @@ Recycling Depot -1978
 Recycling Plant -1978
 
 ********************************
-
+"before coke they burnt charcoal
 Early Chains (Year 1?):
 Coal->Town
 Wool -> (Trading Post)
