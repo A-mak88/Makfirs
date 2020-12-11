@@ -152,8 +152,8 @@ dredging_site.industry.register()
 #fischer_tropsch_plant.industry.register()
 
 
-#from industries import flour_mill
-#flour_mill.industry.register()
+from industries import flour_mill
+flour_mill.industry.register()
 
 
 from industries import food_market
@@ -175,8 +175,8 @@ fishing_harbour.industry.register()
 from industries import forest
 forest.industry.register()
 
-#from industries import fruit_plantation
-#fruit_plantation.industry.register()
+from industries import fruit_plantation
+fruit_plantation.industry.register()
 
 
 #from industries import furniture_factory
@@ -186,8 +186,8 @@ forest.industry.register()
 from industries import general_store
 general_store.industry.register()
 
-#from industries import glass_works
-#glass_works.industry.register()
+from industries import glass_works
+glass_works.industry.register()
 
 from industries import hardware_store
 hardware_store.industry.register()
@@ -226,11 +226,8 @@ junk_yard.industry.register()
 from industries import lumber_yard
 lumber_yard.industry.register()
 
-
 #from industries import machine_shop
 #machine_shop.industry.register()
-
-
 
 #from industries import machine_works
 #machine_works.industry.register()
@@ -245,16 +242,14 @@ lumber_yard.industry.register()
 #from industries import nitrate_mine
 #nitrate_mine.industry.register()
 
-#from industries import oil_wells
-#oil_wells.industry.register()
+from industries import oil_wells
+oil_wells.industry.register()
 
+from industries import oil_refinery
+oil_refinery.industry.register()
 
-#from industries import oil_refinery
-#oil_refinery.industry.register()
-
-
-#from industries import oil_rig
-#oil_rig.industry.register()
+from industries import oil_rig
+oil_rig.industry.register()
 
 from industries import orchard_piggery
 orchard_piggery.industry.register()
@@ -265,22 +260,18 @@ paper_mill.industry.register()
 from industries import peatlands
 peatlands.industry.register()
 
-#from industries import petrol_pump
-#petrol_pump.industry.register()
+from industries import petrol_pump
+petrol_pump.industry.register()
 
 #from industries import phosphate_mine
 #phosphate_mine.industry.register()
 
-
 #from industries import phosphoric_acid_plant
 #phosphoric_acid_plant.industry.register()
 
-
- # should be one of the polymer plants (pvc?)
+# should be one of the polymer plants (pvc?)
 #from industries import plastics_plant
 #plastics_plant.industry.register()
-
-
 
 #from industries import polyethylene_plant
 #polyethylene_plant.industry.register()
@@ -288,9 +279,8 @@ peatlands.industry.register()
 #from industries import polypropylene_plant
 #polypropylene_plant.industry.register()
 
-
-#from industries import port
-#port.industry.register()
+from industries import port
+port.industry.register()
 
 from industries import power_plant
 power_plant.industry.register()

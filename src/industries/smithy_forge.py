@@ -9,8 +9,7 @@ industry = IndustrySecondary(id='smithy_forge',
                              special_flags=['IND_FLAG_ONLY_IN_TOWNS'],
                              name='string(STR_IND_SMITHY_FORGE)',
                              nearby_station_name='string(STR_STATION_FORGE)',
-                             fund_cost_multiplier='63',
-                             expiry_year=1948)
+                             fund_cost_multiplier='63')
 
 industry.economy_variations['MAK_TEST'].enabled = True
 

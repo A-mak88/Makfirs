@@ -1,5 +1,5 @@
 Cargo Usage:
-Current: 37/64
+Current: 36/64
 Firs: 70+/64
 
 Produc Organic gets a 2x bonus if 1 of the following are delivered or a 4x bonus if all? are delivered:
@@ -16,6 +16,7 @@ Grain - Year 1
 Fruit - Year 1
 Fish - Year 1
 Wool - Produced year 1 -EXPORTED- Year 1733 - Textile Mill
+Oil - Year
 ------------Waste----------
 PEAT - Year 1 - Exported - Year 2001 - Biorefinery- Organic material
 Scrap Metal - year 1594? Perhaps the first in the chain of waste? This converts to metal probably, but recycling converts to it. Perhaps have scrapmetal in lower quantities?
@@ -30,6 +31,8 @@ Packaging - Year 1282 - Same as paper same industry building.
 Lumber - Year 1594 - Tomake: Wood+Pass+chemicals?
 Steam - Year 1679 - Tomake: Watr+coal+pass?
 Coke - Year 1817 - Tomake: coal+watr+pass
+Glass - Year ?? - Tomake: Sand
+Petrol - Year ??
 ----------Process 2 step-----
 Goods - Year 1 - Tomake: Food, Alcohol, Paper, packaging
 Electricity - 1882 - Tomake: Steam+Pass

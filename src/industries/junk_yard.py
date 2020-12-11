@@ -1,7 +1,7 @@
 from industry import IndustryTownProducerPopulationDependent, TileLocationChecks
 
 industry = IndustryTownProducerPopulationDependent(id='junk_yard',
-                                     prod_cargo_types_with_multipliers=[('SCMT', 8), ('WDPR', 2)], # prod dependent on town popn
+                                     prod_cargo_types_with_multipliers=[('SCMT', 8), ('WDPR', 2), ('OIL_', 1)], # prod dependent on town popn
                                      prob_in_game='3',
                                      prob_map_gen='7',
                                      map_colour='64',

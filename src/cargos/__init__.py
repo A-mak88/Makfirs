@@ -177,8 +177,8 @@ from cargos import furniture
 furniture.cargo.register()
 """
 
-#from cargos import glass
-#glass.cargo.register()
+from cargos import glass
+glass.cargo.register()
 
 from cargos import goods
 goods.cargo.register()
@@ -220,10 +220,8 @@ from cargos import manganese
 manganese.cargo.register()
 """
 
-
 from cargos import metal
 metal.cargo.register()
-
 
 """ BLTC
 from cargos import methanol
@@ -250,8 +248,8 @@ nickel.cargo.register()
 #from cargos import nuts
 #nuts.cargo.register()
 
-#from cargos import oil
-#oil.cargo.register()
+from cargos import oil
+oil.cargo.register()
 
 #from cargos import oxygen
 #oxygen.cargo.register()
@@ -271,9 +269,8 @@ passengers.cargo.register()
 from cargos import peat
 peat.cargo.register()
 
-#from cargos import petrol
-#petrol.cargo.register()
-
+from cargos import petrol
+petrol.cargo.register()
 
 #from cargos import phosphate
 #phosphate.cargo.register()

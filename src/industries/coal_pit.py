@@ -3,7 +3,7 @@ from industry import IndustryPrimaryExtractive, TileLocationChecks
 industry = IndustryPrimaryExtractive(id='coal_pit',
                                      prod_cargo_types_with_multipliers=[('COAL', 2), ('RCYC', 1)],
                                      prob_in_game='20',
-                                     prob_map_gen='20',
+                                     prob_map_gen='25',
                                      map_colour='1',
                                      # Here my first creation, this primary industry is to spawn very close to coal mine creating a 'sub' industry effect.
                                      location_checks=dict(industry_max_distance=['coal_mine', 20], same_type_distance=20, industry_min_distance=['coal_mine', 5]),

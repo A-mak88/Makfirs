@@ -1,11 +1,11 @@
 from industry import IndustrySecondary, TileLocationChecks
 
 industry = IndustrySecondary(id='chemical_plant',
-                             accept_cargos_with_input_ratios=[('WATR', 4), ('COKE', 2), ('ELEC', 1), ('MNSP', 1), ('PASS', 0)],#('OIL_', 4), Glass?
+                             accept_cargos_with_input_ratios=[('OIL_', 4), ('WATR', 4), ('COKE', 2), ('MNSP', 1), ('GLAS', 1), ('ELEC', 1), ('PASS', 0)],
                              prod_cargo_types_with_output_ratios=[('RFPR', 4), ('PEAT', 4), ('RCYC', 1), ('PASS', 1)],
                              combined_cargos_boost_prod=True,
                              prob_in_game='3',
-                             prob_map_gen='5',
+                             prob_map_gen='2',
                              map_colour='191',
                              # it's rare to force co-location of secondaries, but this one is near portby design
                              # !! this will fail if port is not available in economy

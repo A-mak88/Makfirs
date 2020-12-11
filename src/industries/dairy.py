@@ -2,7 +2,7 @@ from industry import IndustrySecondary, TileLocationChecks
 
 industry = IndustrySecondary(id='dairy',
                              intro_year=1900,
-                             accept_cargos_with_input_ratios=[('MILK', 5), ('MNSP', 2), ('ELEC', 1)], #, ('GLAS', 2)
+                             accept_cargos_with_input_ratios=[('MILK', 5), ('MNSP', 2), ('GRAI', 1),  ('ELEC', 1)], #, ('GLAS', 2)
                              combined_cargos_boost_prod=True,
                              prod_cargo_types_with_output_ratios=[('FOOD', 8), ('RCYC', 2)],
                              prob_in_game='1',

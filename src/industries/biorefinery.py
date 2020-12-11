@@ -1,8 +1,8 @@
 from industry import IndustrySecondary, TileLocationChecks
 
 industry = IndustrySecondary(id='biorefinery',
-                             accept_cargos_with_input_ratios=[('PEAT', 6), ('ELEC', 6)],
-                             prod_cargo_types_with_output_ratios=[('RFPR', 4), ('RCYC', 4) ],#('PETR', 4)
+                             accept_cargos_with_input_ratios=[('PEAT', 6), ('WATR', 4), ('GRAI', 2), ('ELEC', 6)],
+                             prod_cargo_types_with_output_ratios=[('RFPR', 4), ('RCYC', 4), ('PETR', 2) ],#
                              prob_in_game='1',
                              prob_map_gen='1',
                              map_colour='186',

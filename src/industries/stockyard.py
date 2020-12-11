@@ -1,7 +1,7 @@
 from industry import IndustrySecondary, TileLocationChecks
 
 industry = IndustrySecondary(id='stockyard',
-                             accept_cargos_with_input_ratios=[('LVST', 6), ('GRAI', 4), ('MNSP', 2), ('WATR', 2), ('ELEC', 1), ('PASS', 0)],
+                             accept_cargos_with_input_ratios=[('LVST', 6), ('GRAI', 1), ('MNSP', 2), ('WATR', 2), ('ELEC', 1), ('PASS', 0)],
                              combined_cargos_boost_prod=True,
                              prod_cargo_types_with_output_ratios=[('FOOD', 8), ('PASS', 2), ('PEAT', 2)],
                              prob_in_game='2',

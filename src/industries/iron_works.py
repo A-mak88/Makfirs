@@ -4,14 +4,13 @@ industry = IndustrySecondary(id='iron_works',
                              accept_cargos_with_input_ratios=[('IORE', 3), ('COKE', 3), ('SAND', 2), ('ELEC', 1), ('WATR', 1)],
                              combined_cargos_boost_prod=True,
                              prod_cargo_types_with_output_ratios=[('METL', 6), ('RCYC', 1), ('WATR', 1)],
-                             prob_in_game='3',
-                             prob_map_gen='3',
+                             prob_in_game='1',
+                             prob_map_gen='1',
                              map_colour='194',
                              name='string(STR_IND_IRON_WORKS)',
                              location_checks=dict(industry_min_distance=[('quarry', 500), ('iron_ore_mine', 500), ('coal_mine', 500)], same_type_distance=200),
                              nearby_station_name='string(STR_STATION_FURNACE)',
-                             fund_cost_multiplier='69',
-                             expiry_year=1901)
+                             fund_cost_multiplier='69')
 
 industry.economy_variations['MAK_TEST'].enabled = True
 

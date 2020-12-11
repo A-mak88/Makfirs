@@ -1,10 +1,10 @@
 from industry import IndustryTertiary, TileLocationChecks
 
 industry = IndustryTertiary(id='hardware_store',
-                            accept_cargo_types=['GOOD', 'BDMT', 'METL'], #'GLAS'
+                            accept_cargo_types=['GOOD', 'BDMT', 'METL', 'GLAS', 'CMNT', 'PASS'],
                             prod_cargo_types=[],
-                            prob_in_game='18',
-                            prob_map_gen='24',
+                            prob_in_game='5',
+                            prob_map_gen='1',
                             prod_multiplier='[0, 0]',
                             map_colour='169',
                             life_type='IND_LIFE_TYPE_BLACK_HOLE',
