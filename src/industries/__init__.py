@@ -22,8 +22,8 @@ from industries import basic_oxygen_furnace
 basic_oxygen_furnace.industry.register()
 
 
-#from industries import biorefinery
-#biorefinery.industry.register()
+from industries import biorefinery
+biorefinery.industry.register()
 
 
 #from industries import blast_furnace
@@ -40,8 +40,8 @@ brewery.industry.register()
 ##!brick_works.industry.register()
 
 
-#from industries import builders_yard
-#builders_yard.industry.register()
+from industries import builders_yard
+builders_yard.industry.register()
 
 from industries import bulk_terminal
 bulk_terminal.industry.register()
@@ -156,8 +156,8 @@ dairy_farm.industry.register()
 #flour_mill.industry.register()
 
 
-#from industries import food_market
-#food_market.industry.register()
+from industries import food_market
+food_market.industry.register()
 
 
 #from industries import food_processor
@@ -189,8 +189,8 @@ general_store.industry.register()
 #from industries import glass_works
 #glass_works.industry.register()
 
-#from industries import hardware_store
-#hardware_store.industry.register()
+from industries import hardware_store
+hardware_store.industry.register()
 
 from industries import hotel
 hotel.industry.register()
@@ -262,8 +262,8 @@ orchard_piggery.industry.register()
 from industries import paper_mill
 paper_mill.industry.register()
 
-#from industries import peatlands
-#peatlands.industry.register()
+from industries import peatlands
+peatlands.industry.register()
 
 #from industries import petrol_pump
 #petrol_pump.industry.register()
@@ -367,8 +367,8 @@ textile_mill.industry.register()
 #from industries import tinplate_works
 #tinplate_works.industry.register()
 
-#from industries import trading_post
-#trading_post.industry.register()
+from industries import trading_post
+trading_post.industry.register()
 
 #from industries import tyre_plant
 #tyre_plant.industry.register()

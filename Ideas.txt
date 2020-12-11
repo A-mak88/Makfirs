@@ -15,8 +15,9 @@ Livestock - Year 1
 Grain - Year 1
 Fruit - Year 1
 Fish - Year 1
-Wool - Produced year 1 but isnt usefull till year 1733
+Wool - Produced year 1 -EXPORTED- Year 1733 - Textile Mill
 ------------Waste----------
+PEAT - Year 1 - Exported - Year 2001 - Biorefinery- Organic material
 Scrap Metal - year 1594? Perhaps the first in the chain of waste? This converts to metal probably, but recycling converts to it. Perhaps have scrapmetal in lower quantities?
 Recycling - Year 1978 - This is a waste product that is not manageable until mid-game. Rename to waste for early game management? Create waste and keep this for late game industries + a conversion from waste??
 ---------------Processed 1 step-----
@@ -95,20 +96,25 @@ Recycling Plant -1978
 
 Early Chains (Year 1?):
 Coal->Town
-Wood(forest)->Lumber (sawmill) -> Goods -> Town/industries.
+Wool -> (Trading Post)
 Fish -> Food (fishing harbor) -> Town/industries
 Livestock -> Food (stockyard) ->etc
 Grain -> Food
 Fruit -> Food?
-
 Grain+Fruit+Water -> Alcohol
+
+Wood(forest)->Lumber (sawmill) -> Goods -> Town/industries.
+
+----WASTE--
+Peat -> (Trading Post)
 (year 1700?)
 Wood -> Lumber -> Building Materials -> Eng+farms -> Wood/raw
 Wood -> Packaging (papermill, low amount?) -> Engineering+farmsupply -> Wood/raw
 
-Wool -> Goods...
+Wool -> Goods (Textile Mill)
 
 
 Waste:
 Recycling -> Scrap Metal -> Metal -> building materials
+Peat -> (Biorefinery)
 

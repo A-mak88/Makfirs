@@ -4,7 +4,7 @@ industry = IndustrySecondary(id='dairy_farm',
                                   
                                   accept_cargos_with_input_ratios=[('LVST', 6), ('GRAI', 2), ('PASS', 1), ('FMSP', 1), ('ELEC', 1)], #Petrol?
                                   combined_cargos_boost_prod=True,
-                                  prod_cargo_types_with_output_ratios=[('MILK', 16), ('WATR', 1)],#waste?
+                                  prod_cargo_types_with_output_ratios=[('MILK', 16), ('PEAT', 4), ('WATR', 1)],#waste?
                                   prob_in_game='5',
                                   prob_map_gen='5',
                                   map_colour='209',

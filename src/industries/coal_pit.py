@@ -6,7 +6,7 @@ industry = IndustryPrimaryExtractive(id='coal_pit',
                                      prob_map_gen='20',
                                      map_colour='1',
                                      # Here my first creation, this primary industry is to spawn very close to coal mine creating a 'sub' industry effect.
-                                     location_checks=dict(industry_max_distance=['coal_mine', 20], same_type_distance=20, industry_min_distance=['coal_mine', 5]),
+                                     location_checks=dict(industry_max_distance=['coal_mine', 20], same_type_distance=20, industry_min_distance=['coal_mine', 5], incompatible_industries=['forest']),
                                      prospect_chance='0.75',
                                      name='string(STR_IND_COAL_PIT)',
                                      nearby_station_name='string(STR_STATION_PIT)',

@@ -28,6 +28,7 @@ economy = Economy(id = "MAK_TEST",
                             #'clay', #Firs
                             #'stone', #Firs
                             #'iron_ore', #Firs
+                            'peat', #Dunno
                             'recyclables', #Firs
                             'chemicals', #Firs
                             #'bauxite', #Firs
