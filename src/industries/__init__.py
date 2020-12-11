@@ -26,8 +26,8 @@ from industries import biorefinery
 biorefinery.industry.register()
 
 
-#from industries import blast_furnace
-#blast_furnace.industry.register()
+from industries import blast_furnace
+blast_furnace.industry.register()
 
 #from industries import body_plant
 #body_plant.industry.register()
@@ -198,12 +198,12 @@ hotel.industry.register()
 #from industries import herding_coop
 #herding_coop.industry.register()
 
-#from industries import iron_ore_mine
-#iron_ore_mine.industry.register()
+from industries import iron_ore_mine
+iron_ore_mine.industry.register()
 
 
-#from industries import iron_works
-#iron_works.industry.register()
+from industries import iron_works
+iron_works.industry.register()
 
 
 from industries import junk_yard
@@ -343,8 +343,8 @@ sheep_farm.industry.register()
 #from industries import solvay_plant
 #solvay_plant.industry.register()
 
-#from industries import smithy_forge
-#smithy_forge.industry.register()
+from industries import smithy_forge
+smithy_forge.industry.register()
 
 #from industries import steel_mill
 #steel_mill.industry.register()

@@ -3,10 +3,10 @@ from industry import IndustryPrimaryExtractive, TileLocationChecks
 industry = IndustryPrimaryExtractive(id='quarry',
                                      prod_cargo_types_with_multipliers=[('SAND', 2), ('GRVL', 24)],
                                      prob_in_game='4',
-                                     prob_map_gen='10',
-                                     map_colour='194',
+                                     prob_map_gen='4',
+                                     map_colour='209',
                                      # allow longer distance on clustering than usual, and more clusters, as industry is hard to locate
-                                     location_checks=dict(industry_min_distance=[('sawmill', 500), ('coal_mine', 500), ('clay_pit', 2)], industry_max_distance=['clay_pit', 50], cluster=[90, 6], incompatible_industries=['coal_mine', 'coal_pit']),
+                                     location_checks=dict(industry_min_distance=[('sawmill', 500), ('coal_mine', 500), ('sawmill', 2)], industry_max_distance=['sawmill', 100], cluster=[90, 6], incompatible_industries=['coal_mine', 'coal_pit']),
                                      prospect_chance='0.75',
                                      name='string(STR_IND_QUARRY)',
                                      nearby_station_name='string(STR_IND_QUARRY)',

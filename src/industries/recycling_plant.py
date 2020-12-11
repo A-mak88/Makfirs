@@ -2,7 +2,7 @@ from industry import IndustrySecondary, TileLocationChecks
 
 industry = IndustrySecondary(id='recycling_plant',
                              accept_cargos_with_input_ratios=[('RCYC', 6), ('STEM', 2), ('ELEC', 2)],
-                             prod_cargo_types_with_output_ratios=[('SCMT', 4), ('WDPR', 2), ('WATR', 1)],
+                             prod_cargo_types_with_output_ratios=[('SCMT', 4), ('WDPR', 2), ('PEAT', 1), ('WATR', 1)],
                              prob_in_game='1',
                              prob_map_gen='1',
                              map_colour='164',

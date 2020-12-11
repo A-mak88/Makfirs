@@ -105,11 +105,13 @@ Grain -> Food
 Fruit -> Food?
 Grain+Fruit+Water -> Alcohol
 
+Iron ore -> Metal -> eng/fmsp/bdmt ->raw
+
 Wood(forest)->Lumber (sawmill) -> Goods -> Town/industries.
 
 ----WASTE--
-Peat -> (Trading Post)
-(year 1700?)
+Peat -> (Trading Post) 
+-----Year 1700?---------------
 Wood -> Lumber -> Building Materials -> Eng+farms -> Wood/raw
 Wood -> Packaging (papermill, low amount?) -> Engineering+farmsupply -> Wood/raw
 

@@ -2,8 +2,8 @@ from industry import IndustryPrimaryExtractive, TileLocationChecks
 
 industry = IndustryPrimaryExtractive(id='peatlands',
                                      prod_cargo_types_with_multipliers=[('PEAT', 8)],
-                                     prob_in_game='20',
-                                     prob_map_gen='20',
+                                     prob_in_game='10',
+                                     prob_map_gen='10',
                                      map_colour='72',
                                      # allow longer distance on clustering than usual, and more clusters, as industry is hard to locate
                                      location_checks=dict(industry_max_distance=['trading_post', 100], cluster=[50, 6], same_type_distance=2),

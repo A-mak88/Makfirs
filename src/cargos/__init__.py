@@ -191,8 +191,8 @@ from cargos import hydrochloric_acid
 hydrochloric_acid.cargo.register()
 """
 
-#from cargos import iron_ore
-#iron_ore.cargo.register()
+from cargos import iron_ore
+iron_ore.cargo.register()
 
 #from cargos import kaolin
 #kaolin.cargo.register()
@@ -221,8 +221,8 @@ manganese.cargo.register()
 """
 
 
-#from cargos import metal
-#metal.cargo.register()
+from cargos import metal
+metal.cargo.register()
 
 
 """ BLTC

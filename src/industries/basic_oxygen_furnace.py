@@ -1,15 +1,15 @@
 from industry import IndustrySecondary, TileLocationChecks
 
 industry = IndustrySecondary(id='basic_oxygen_furnace',
-                             accept_cargos_with_input_ratios=[('COKE', 4), ('PASS', 0), ('WATR', 6)], 
+                             accept_cargos_with_input_ratios=[('WATR', 6), ('COKE', 4), ('ELEC', 1), ('PASS', 0)], 
                              combined_cargos_boost_prod=True,
-                             prod_cargo_types_with_output_ratios=[('STEM', 4), ('PASS', 12)],
+                             prod_cargo_types_with_output_ratios=[('STEM', 4), ('WATR', 1), ('PASS', 1)],
                              prob_in_game='1',
                              prob_map_gen='1',
                              map_colour='169',
                              special_flags=['IND_FLAG_MILITARY_HELICOPTER_CAN_EXPLODE'],
                              # My poop is recycled.
-                             location_checks=dict(industry_min_distance=[('coke_oven', 500), ('power_plant', 500)], same_type_distance=1000),
+                             location_checks=dict(industry_min_distance=['blast_furnace', 2], industry_max_distance=['blast_furnace', 10], same_type_distance=1000),
                              name='string(STR_IND_BASIC_OXYGEN_FURNACE)',
                              nearby_station_name='string(STR_STATION_FURNACE)',
                              fund_cost_multiplier='160',
