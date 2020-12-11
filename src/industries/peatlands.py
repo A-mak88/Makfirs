@@ -1,7 +1,7 @@
 from industry import IndustryPrimaryExtractive, TileLocationChecks
 
 industry = IndustryPrimaryExtractive(id='peatlands',
-                                     prod_cargo_types_with_multipliers=[('PEAT', 14)],
+                                     prod_cargo_types_with_multipliers=[('PEAT', 8)],
                                      prob_in_game='20',
                                      prob_map_gen='20',
                                      map_colour='72',

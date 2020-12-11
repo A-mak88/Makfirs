@@ -1,7 +1,7 @@
 from industry import IndustryPrimaryOrganic, TileLocationChecks
 
 industry = IndustryPrimaryOrganic(id='orchard_piggery',
-                                  prod_cargo_types_with_multipliers=[('FRUT', 1), ('LVST', 1)],
+                                  prod_cargo_types_with_multipliers=[('FRUT', 1), ('LVST', 2)],
                                   map_colour='85',
                                   prob_in_game='10',
                                   prob_map_gen='10',

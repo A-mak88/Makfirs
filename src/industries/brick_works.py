@@ -1,9 +1,9 @@
 from industry import IndustrySecondary, TileLocationChecks
 
 industry = IndustrySecondary(id='brick_works',
-                             accept_cargos_with_input_ratios=[('COKE', 2), ('WDPR', 2), ('CMNT', 2), ('RFPR', 2), ('ELEC', 1)],# ('CLAY', 4),
+                             accept_cargos_with_input_ratios=[('COKE', 2), ('CLAY', 2), ('WDPR', 2), ('CMNT', 2), ('RFPR', 2), ('ELEC', 1)],#
                              combined_cargos_boost_prod=True,
-                             prod_cargo_types_with_output_ratios=[('BDMT', 8), ('RCYC', 4)], #cement instead?
+                             prod_cargo_types_with_output_ratios=[('BDMT', 8), ('RCYC', 4), ('WATR', 4)],
                              prob_in_game='3',
                              prob_map_gen='5',
                              map_colour='183',

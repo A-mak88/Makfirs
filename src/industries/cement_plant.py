@@ -1,14 +1,14 @@
 from industry import IndustrySecondary, TileLocationChecks
 
 industry = IndustrySecondary(id='cement_plant',
-                             accept_cargos_with_input_ratios=[('COAL', 2),('SAND', 4), ('GRVL', 4), ('WATR', 1), ('ELEC', 1)],#('CLAY', 2)
+                             accept_cargos_with_input_ratios=[('COAL', 2), ('CLAY', 4), ('SAND', 4), ('GRVL', 4), ('WATR', 1), ('ELEC', 1)],
                              combined_cargos_boost_prod=True,
                              prod_cargo_types_with_output_ratios=[('CMNT', 8), ('RCYC', 4)], #should be cement to brickworks then to builders yard?
                              prob_in_game='3',
                              prob_map_gen='5',
                              map_colour='19',
                              special_flags=['IND_FLAG_MILITARY_HELICOPTER_CAN_EXPLODE'],
-                             location_checks=dict(industry_min_distance=[('chemical_plant', 500), ('brick_works', 500)], same_type_distance=500),
+                             location_checks=dict(industry_min_distance=[('chemical_plant', 500), ('brick_works', 500), ('clay_pit', 50)], same_type_distance=500),
                              name='string(STR_IND_CEMENT_PLANT)',
                              nearby_station_name='string(STR_STATION_SILO)',
                              fund_cost_multiplier='203')

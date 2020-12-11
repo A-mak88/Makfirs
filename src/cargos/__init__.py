@@ -85,8 +85,8 @@ chromite_ore.cargo.register()
 """
 
 
-#from cargos import clay
-#clay.cargo.register()
+from cargos import clay
+clay.cargo.register()
 
 #from cargos import cleaning_agents
 #cleaning_agents.cargo.register()

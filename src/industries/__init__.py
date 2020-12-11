@@ -68,8 +68,8 @@ chemical_plant.industry.register()
 #chromite_mine.industry.register()
 
 
-##!from industries import clay_pit
-##!clay_pit.industry.register()
+from industries import clay_pit
+clay_pit.industry.register()
 
 from industries import coal_pit
 coal_pit.industry.register()

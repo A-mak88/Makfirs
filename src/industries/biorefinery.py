@@ -3,8 +3,8 @@ from industry import IndustrySecondary, TileLocationChecks
 industry = IndustrySecondary(id='biorefinery',
                              accept_cargos_with_input_ratios=[('PEAT', 6), ('ELEC', 6)],
                              prod_cargo_types_with_output_ratios=[('RFPR', 4), ('RCYC', 4) ],#('PETR', 4)
-                             prob_in_game='3',
-                             prob_map_gen='5',
+                             prob_in_game='1',
+                             prob_map_gen='1',
                              map_colour='186',
                              special_flags=['IND_FLAG_MILITARY_AIRPLANE_CAN_EXPLODE'],
                              location_checks=dict(industry_min_distance=['peatlands', 1000]),

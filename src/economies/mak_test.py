@@ -25,7 +25,7 @@ economy = Economy(id = "MAK_TEST",
                             'wool',
                             'milk', #Firs
                             #'oil', #Firs
-                            #'clay', #Firs
+                            'clay', #Firs
                             'stone', #Firs
                             'sand',
                             #'iron_ore', #Firs
