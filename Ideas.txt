@@ -26,7 +26,7 @@ Food - Year 1 - Tomake:Fruit?, Grain, Livestock, Fish, Pass
 Alcohol - Year 1 - Tomake: Fruit, Grain, Watr, Pass
 Cement - Year 1
 Chemicals - Year 1?
-Paper - Year 1282 - Tomake: Wood+Pass+Watr?
+Paper - Year 1282 - Tomake: Wood+Pass+Watr? chem?
 Packaging - Year 1282 - Same as paper same industry building.
 Lumber - Year 1594 - Tomake: Wood+Pass+chemicals?
 Steam - Year 1679 - Tomake: Watr+coal+pass?
@@ -36,6 +36,13 @@ Petrol - Year ??
 ----------Process 2 step-----
 Goods - Year 1 - Tomake: Food, Alcohol, Paper, packaging
 Electricity - 1882 - Tomake: Steam+Pass
+
+
+
+NOT IMPLEMENTED JUST IDEAS:
+lvstck+Plant fibres->stockyard -> peat -> fertalizer -> plantfib (raw animal feed/waste?)
+
+
 ************************************************************************************************************
 
 Industry Usage (127 per grf:

@@ -1,9 +1,9 @@
 from industry import IndustrySecondary, TileLocationChecks
 
 industry = IndustrySecondary(id='coal_mine',
-                                     accept_cargos_with_input_ratios=[('ELEC', 0), ('ENSP', 5), ('WATR', 8), ('RFPR', 8), ('PASS', 8), ('MAIL', 8)], 
+                                     accept_cargos_with_input_ratios=[('PASS', 8), ('WATR', 4), ('WDPR', 2), ('RFPR', 2), ('ENSP', 2), ('ELEC', 0)], 
                                      combined_cargos_boost_prod=True,
-                                     prod_cargo_types_with_output_ratios=[('COAL', 6), ('PASS', 1), ('MAIL', 1), ('RCYC', 4)], #lower is less, equation maybe total cargo delivered this cycle (256ticks) divided by 8? 
+                                     prod_cargo_types_with_output_ratios=[('COAL', 6), ('PASS', 1), ('PEAT', 1), ('RCYC', 4)], #lower is less, equation maybe total cargo delivered this cycle (256ticks) divided by 8? 
                                      prob_in_game='5',
                                      prob_map_gen='8',
                                      map_colour='1',

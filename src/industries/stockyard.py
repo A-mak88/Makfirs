@@ -1,13 +1,14 @@
 from industry import IndustrySecondary, TileLocationChecks
 
 industry = IndustrySecondary(id='stockyard',
-                             accept_cargos_with_input_ratios=[('LVST', 6), ('GRAI', 1), ('MNSP', 2), ('WATR', 2), ('ELEC', 1), ('PASS', 0)],
+                             accept_cargos_with_input_ratios=[('LVST', 6), ('GRAI', 1), ('MNSP', 2), ('WATR', 2), ('ELEC', 1), ('PASS', 0)], #Grain to plant fibres aka "hay"? plantfibres just become generalized raw animal feed?
                              combined_cargos_boost_prod=True,
-                             prod_cargo_types_with_output_ratios=[('FOOD', 8), ('PASS', 2), ('PEAT', 2)],
+                             prod_cargo_types_with_output_ratios=[('FOOD', 8), ('PASS', 2), ('PEAT', 2)], #meat?
                              prob_in_game='2',
                              prob_map_gen='2',
                              map_colour='177',
                              special_flags=['IND_FLAG_MILITARY_HELICOPTER_CAN_EXPLODE'],
+                             location_checks=dict(industry_min_distance=[('chemical_plant', 500), ('brick_works', 500), ('clay_pit', 50), ('sawmill', 500), ('supply_yard', 500)], same_type_distance=500),
                              name='string(STR_IND_STOCKYARD)',
                              nearby_station_name='string(STR_STATION_ANIMALS)',
                              fund_cost_multiplier='115',

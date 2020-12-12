@@ -7,7 +7,7 @@ industry = IndustrySecondary(id='supply_yard',
                              prob_map_gen='5',
                              map_colour='143',
                              name='string(STR_IND_SUPPLY_YARD)',
-                             location_checks=dict(industry_min_distance=[('lumber_yard', 500), ('paper_mill', 500), ('stockyard', 4)], industry_max_distance=['stockyard', 20], same_type_distance=500),
+                             location_checks=dict(industry_min_distance=[('lumber_yard', 500), ('paper_mill', 500), ('sawmill', 4)], industry_max_distance=['sawmill', 20], same_type_distance=500),
                              nearby_station_name='string(STR_STATION_BASE)',
                              fund_cost_multiplier='110',
                              intro_year=1594)
