@@ -5,8 +5,8 @@ industry = IndustryPrimaryExtractive(id='peatlands',
                                      prob_in_game='7',
                                      prob_map_gen='7',
                                      map_colour='72',
-                                     # allow longer distance on clustering than usual, and more clusters, as industry is hard to locate
-                                     location_checks=dict(industry_max_distance=['trading_post', 100], cluster=[50, 6], same_type_distance=2),
+                                     # Clusters cause min distance not to work, need to learn more.
+                                     location_checks=dict(industry_max_distance=['trading_post', 150], industry_min_distance=['trading_post', 20], same_type_distance=2),
                                      prospect_chance='0.75',
                                      name='string(STR_IND_PEATLANDS)',
                                      nearby_station_name='string(STR_IND_PEATLANDS)',

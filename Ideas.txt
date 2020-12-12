@@ -16,9 +16,12 @@ Grain - Year 1
 Fruit - Year 1
 Fish - Year 1
 Wool - Produced year 1 -EXPORTED- Year 1733 - Textile Mill
-Oil - Year
+Oil - Year???
 Sugar Beet - Year 1
 Plant Fibres - FICR - year1
+Clay - Year 1
+Iron ore - Year1
+
 ------------Waste----------
 PEAT - Year 1 - Exported - Year 2001 - Biorefinery- Organic material
 Scrap Metal - year 1594? Perhaps the first in the chain of waste? This converts to metal probably, but recycling converts to it. Perhaps have scrapmetal in lower quantities?
@@ -26,26 +29,46 @@ Recycling - Year 1978 - This is a waste product that is not manageable until mid
 ---------------Processed 1 step-----
 Food - Year 1 - Tomake:Fruit?, Grain, Livestock, Fish, Pass
 Alcohol - Year 1 - Tomake: Fruit, Grain, Watr, Pass
-Cement - Year 1
+
+Cement - Year 1 - Clay+stone
 Chemicals - Year 1?
-Textiles - year 1
+Textiles - year 1 - Wool+Plant Fibres
 Paper - Year 1282 - Tomake: Wood+Pass+Watr? chem?
-Packaging - Year 1282 - Same as paper same industry building. Should it be made from paper, plastic glass, aluminum??
+Packaging - Year 1282 - Same as paper same industry building. need to change. Should it be made from paper, plastic glass, aluminum??
 Lumber - Year 1594 - Tomake: Wood+Pass+chemicals?
-Steam - Year 1679 - Tomake: Watr+coal+pass?
 Coke - Year 1817 - Tomake: coal+watr+pass
-Glass - Year ?? - Tomake: Sand
-Plastic- ?
+Metal - year 1? iron+coke
+Glass - Year ?? - Tomake: Sand+lumber+metal
+Plastic- ? - Paper+oil+chemicals?
+Steam - Year 1679 - Tomake: Watr+coke+pass?
 Petrol - Year ??
 ----------Process 2 step-----
 Goods - Year 1 - Tomake: Food, Alcohol, Paper, packaging
 Electricity - 1882 - Tomake: Steam+Pass
 
+Building Materials - Lumber+plastic+metal
+
+Farm Supplies
+Engineering Supplies
 
 
-NOT IMPLEMENTED JUST IDEAS:
-lvstck+Plant fibres->stockyard -> peat -> fertalizer -> plantfib (raw animal feed/waste?)
-
+*************************************************NOT IMPLEMENTED JUST IDEAS*******************************************************************
+Fertalizer?
+Idea:   Producer|Peat ->|fert plan|fertalizer -> start
+Compare:Producer|Recy ->|Recy depo|scrapmetal ->|Blast furnace|Metal ->|Supply Yard|Eng/Farm Supplies -> Start
+Meat/Veggies/Cereal?
+Current:Livestock|stockyard|food -> houses
+Idea:   Livestock|stockyard|meat->|Food_processor|food-> houses
+Current:Fish|fish harbour|Food -> houses
+Idea:   Fish|fish harbour|Meat ->|Food processor|Food-> houses
+Current:Grain/
+Natural Gas? Late game cargo, replace coke in many things, alternative to electricity also late game cargo?
+Steel? Steel would replace metal... What would metal do?
+Copper?
+Tin?
+Tin+copper= Bronze (the least valuable, valuables?)
+Diamond?
+Valuables?
 
 ************************************************************************************************************
 

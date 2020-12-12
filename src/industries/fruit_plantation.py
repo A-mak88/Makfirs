@@ -3,13 +3,13 @@ from industry import IndustryPrimaryOrganic, TileLocationChecks
 industry = IndustryPrimaryOrganic(id='fruit_plantation',
                                   prod_cargo_types_with_multipliers=[('FRUT', 10), ('MAIL', 2), ('SAND', 2)],
                                   prob_in_game='4',
-                                  prob_map_gen='10',
+                                  prob_map_gen='5',
                                   prospect_chance='0.75',
                                   map_colour='207',
                                   name='TTD_STR_INDUSTRY_NAME_FRUIT_PLANTATION',
                                   extra_text_fund='string(STR_FUND_FRUIT_PLANTATION)',
                                   nearby_station_name='string(STR_STATION_PLANTATION)',
-                                  location_checks=dict(industry_max_distance=['hotel', 50], cluster=[50, 4]),
+                                  location_checks=dict(industry_max_distance=['hotel', 100], cluster=[200, 4]),
                                   # fruit plantation doesn't cluster, by design - no industry location checks needed
                                   fund_cost_multiplier='54',
                                   override_default_construction_states=True)

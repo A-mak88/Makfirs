@@ -5,9 +5,10 @@ industry = IndustrySecondary(id='sugar_refinery',
                              combined_cargos_boost_prod=True,
                              prod_cargo_types_with_output_ratios=[('PAPR', 8), ('PASS', 1), ('RCYC', 1)], #should it make sugar from sugar cane aswell? or just make sugar cane and rename sugar cane to sugar, sugar cane plantations grind onsite???
                              prob_in_game='3',
-                             prob_map_gen='5',
+                             prob_map_gen='2',
                              map_colour='83',
                              special_flags=['IND_FLAG_MILITARY_AIRPLANE_CAN_EXPLODE'],
+                             location_checks=dict(industry_min_distance=[('arable_farm', 500), ('farm', 500), ('food_processor', 30)], same_type_distance=500),
                              name='string(STR_IND_SUGAR_REFINERY)',
                              nearby_station_name='string(STR_STATION_SUGAR_COMPANY)',
                              fund_cost_multiplier='140')

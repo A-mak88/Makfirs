@@ -9,7 +9,7 @@ industry = IndustrySecondary(id='chemical_plant',
                              map_colour='191',
                              # it's rare to force co-location of secondaries, but this one is near portby design
                              # !! this will fail if port is not available in economy
-                             location_checks=dict(same_type_distance=128), #industry_max_distance=['port', 96],
+                             location_checks=dict(same_type_distance=128), industry_max_distance=['port', 96],
                              name='string(STR_IND_CHEMICAL_PLANT)',
                              nearby_station_name='string(STR_STATION_HEAVY_INDUSTRY_2)',
                              fund_cost_multiplier='170')

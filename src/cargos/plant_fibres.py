@@ -16,5 +16,5 @@ cargo = Cargo(id='plant_fibres',
               penalty_lowerbound='10',
               single_penalty_length='50',
               capacity_multiplier='1',
-              price_factor=70,
+              price_factor=55,
               icon_indices=(3, 1))

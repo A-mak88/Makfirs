@@ -1,7 +1,7 @@
 from industry import IndustrySecondary, TileLocationChecks
 
 industry = IndustrySecondary(id='supply_yard',
-                             accept_cargos_with_input_ratios=[('SCMT', 4), ('MNSP', 4), ('BDMT', 1)], #METL?
+                             accept_cargos_with_input_ratios=[('METL', 4), ('MNSP', 4), ('BDMT', 1)],
                              prod_cargo_types_with_output_ratios=[('ENSP', 1), ('FMSP', 1)],
                              prob_in_game='4',
                              prob_map_gen='5',

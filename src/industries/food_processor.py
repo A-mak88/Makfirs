@@ -4,8 +4,9 @@ industry = IndustrySecondary(id='food_processor',
                              accept_cargos_with_input_ratios=[('FRUT', 4), ('LVST', 4), ('GRAI', 4), ('PAPR', 2), ('PLAS', 2), ('MNSP', 2), ('ELEC', 0) ],# ('BEAN', 6), paper is instead of sugar as a test for now
                              prod_cargo_types_with_output_ratios=[('FOOD', 8)],
                              prob_in_game='3',
-                             prob_map_gen='5',
+                             prob_map_gen='2',
                              map_colour='181',
+                             location_checks=dict(industry_min_distance=[('arable_farm', 500), ('farm', 500), ('sugar_refinery', 30)], same_type_distance=500),
                              name='TTD_STR_INDUSTRY_NAME_FOOD_PROCESSING_PLANT',
                              nearby_station_name='string(STR_STATION_FOOD_CORPORATION)',
                              fund_cost_multiplier='65')

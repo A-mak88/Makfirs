@@ -1,12 +1,13 @@
 from industry import IndustrySecondary, TileLocationChecks
 
 industry = IndustrySecondary(id='plastics_plant',
-                             accept_cargos_with_input_ratios=[('PAPR', 6), ('FICR', 6), ('ELEC', 1), ('RFPR', 1)], #('CHLO', 4), ('C2H4', 4)
+                             accept_cargos_with_input_ratios=[('PAPR', 6), ('FICR', 6), ('RFPR', 1), ('ELEC', 0)], #('CHLO', 4), ('C2H4', 4)
                              prod_cargo_types_with_output_ratios=[('PLAS', 2), ('PEAT', 4),],
                              combined_cargos_boost_prod=True,
                              prob_in_game='3',
-                             prob_map_gen='5',
+                             prob_map_gen='2',
                              map_colour='209',
+                             location_checks=dict(industry_min_distance=[('chemical_plant', 500), ('farm', 500), ('paper_mill', 500)], same_type_distance=500),
                              name='string(STR_IND_PLASTICS_PLANT)',
                              nearby_station_name='string(STR_STATION_MOULDINGS)',
                              fund_cost_multiplier='125',
