@@ -3,7 +3,7 @@ from industry import IndustrySecondary, TileLocationChecks
 industry = IndustrySecondary(id='stockyard',
                              accept_cargos_with_input_ratios=[('LVST', 6), ('GRAI', 1), ('MNSP', 2), ('WATR', 2), ('ELEC', 1), ('PASS', 0)], #Grain to plant fibres aka "hay"? plantfibres just become generalized raw animal feed?
                              combined_cargos_boost_prod=True,
-                             prod_cargo_types_with_output_ratios=[('FOOD', 8), ('PASS', 2), ('PEAT', 2)], #meat?
+                             prod_cargo_types_with_output_ratios=[('FOOD', 8), ('WOOL', 2), ('PASS', 1), ('PEAT', 1)], #meat?
                              prob_in_game='2',
                              prob_map_gen='2',
                              map_colour='177',

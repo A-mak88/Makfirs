@@ -1,7 +1,7 @@
 from industry import IndustrySecondary, TileLocationChecks
 
 industry = IndustrySecondary(id='food_processor',
-                             accept_cargos_with_input_ratios=[('FRUT', 4), ('LVST', 4), ('GRAI', 4), ('MNSP', 2), ('ELEC', 0) ],# ('BEAN', 6),
+                             accept_cargos_with_input_ratios=[('FRUT', 4), ('LVST', 4), ('GRAI', 4), ('PAPR', 2), ('PLAS', 2), ('MNSP', 2), ('ELEC', 0) ],# ('BEAN', 6), paper is instead of sugar as a test for now
                              prod_cargo_types_with_output_ratios=[('FOOD', 8)],
                              prob_in_game='3',
                              prob_map_gen='5',

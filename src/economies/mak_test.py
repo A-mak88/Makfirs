@@ -14,24 +14,26 @@ economy = Economy(id = "MAK_TEST",
                             'fish', #Firs
                             'steam',
                             'wood', #Firs
-                            'coke',
+                            'grain', #Firs
                             'paper',
                             'food', #Firs
-                            #'plant_fibres', #Firs
+                            'plant_fibres', #Firs
                             'fruits',  #Firs
-                            'grain', #Firs
-                            #'sugar_beet', #Firs
+                            'sugar_beet', #Firs
                             'livestock', #Firs
                             'wool',
-                            'milk', #Firs
-                            'oil', #Firs
                             'clay', #Firs
                             'stone', #Firs
                             'sand',
                             'iron_ore', #Firs
+                            'oil', #Firs
                             'peat', #Dunno
                             'recyclables', #Firs
+                            'milk', #Firs
+                            'plastics',
+                            'textiles',
                             'cement',
+                            'coke',
                             'chemicals', #Firs
                             #'bauxite', #Firs
                             'lumber', #Firs

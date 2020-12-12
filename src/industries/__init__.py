@@ -6,11 +6,8 @@ registered_industries = []
 #from industries import aluminium_plant
 #aluminium_plant.industry.register()
 
-
-
 #from industries import ammonia_plant
 #ammonia_plant.industry.register()
-
 
 from industries import arable_farm
 arable_farm.industry.register()
@@ -21,10 +18,8 @@ arable_farm.industry.register()
 from industries import basic_oxygen_furnace
 basic_oxygen_furnace.industry.register()
 
-
 from industries import biorefinery
 biorefinery.industry.register()
-
 
 from industries import blast_furnace
 blast_furnace.industry.register()
@@ -35,10 +30,8 @@ blast_furnace.industry.register()
 from industries import brewery
 brewery.industry.register()
 
-
 from industries import brick_works
 brick_works.industry.register()
-
 
 from industries import builders_yard
 builders_yard.industry.register()
@@ -58,24 +51,20 @@ chemical_plant.industry.register()
 #from industries import chlor_alkali_plant
 #chlor_alkali_plant.industry.register()
 
-
 #from industries import civil_explosives_facility
 #civil_explosives_facility.industry.register()
-
-
 
 #from industries import chromite_mine
 #chromite_mine.industry.register()
 
-
 from industries import clay_pit
 clay_pit.industry.register()
 
-from industries import coal_pit
-coal_pit.industry.register()
-
 from industries import coal_mine
 coal_mine.industry.register()
+
+from industries import coal_pit
+coal_pit.industry.register()
 
 #from industries import coffee_estate
 #coffee_estate.industry.register()
@@ -89,10 +78,8 @@ coke_oven.industry.register()
 #from industries import copper_mine
 #copper_mine.industry.register()
 
-
 #from industries import copper_concentrator
 #copper_concentrator.industry.register()
-
 
 #from industries import copper_refinery
 #copper_refinery.industry.register()
@@ -118,11 +105,8 @@ dredging_site.industry.register()
 #from industries import engine_plant
 #engine_plant.industry.register()
 
-
 #from industries import ethylene_cracker
 #ethylene_cracker.industry.register()
-
-
 
 #from industries import factory_1
 #factory_1.industry.register()
@@ -133,35 +117,17 @@ dredging_site.industry.register()
 #from industries import factory_3
 #factory_3.industry.register()
 
-
-#from industries import farm
-#farm.industry.register()
-
+from industries import farm
+farm.industry.register()
 
 #from industries import ferrochrome_smelter
 #ferrochrome_smelter.industry.register()
 
-
-
 #from industries import fertiliser_plant
 #fertiliser_plant.industry.register()
 
-
-
 #from industries import fischer_tropsch_plant
 #fischer_tropsch_plant.industry.register()
-
-
-from industries import flour_mill
-flour_mill.industry.register()
-
-
-from industries import food_market
-food_market.industry.register()
-
-
-#from industries import food_processor
-#food_processor.industry.register()
 
 from industries import fish_farm
 fish_farm.industry.register()
@@ -172,16 +138,23 @@ fishing_grounds.industry.register()
 from industries import fishing_harbour
 fishing_harbour.industry.register()
 
+from industries import flour_mill
+flour_mill.industry.register()
+
+from industries import food_market
+food_market.industry.register()
+
+from industries import food_processor
+food_processor.industry.register()
+
 from industries import forest
 forest.industry.register()
 
 from industries import fruit_plantation
 fruit_plantation.industry.register()
 
-
 #from industries import furniture_factory
 #furniture_factory.industry.register()
-
 
 from industries import general_store
 general_store.industry.register()
@@ -201,18 +174,14 @@ hotel.industry.register()
 from industries import iron_ore_mine
 iron_ore_mine.industry.register()
 
-
 from industries import iron_works
 iron_works.industry.register()
-
 
 from industries import junk_yard
 junk_yard.industry.register()
 
-
 #from industries import latex_processor
 #latex_processor.industry.register()
-
 
 #from industries import lime_kiln
 #lime_kiln.industry.register()
@@ -232,7 +201,6 @@ lumber_yard.industry.register()
 #from industries import machine_works
 #machine_works.industry.register()
 
-
 #from industries import manganese_mine
 #manganese_mine.industry.register()
 
@@ -242,14 +210,14 @@ lumber_yard.industry.register()
 #from industries import nitrate_mine
 #nitrate_mine.industry.register()
 
-from industries import oil_wells
-oil_wells.industry.register()
-
 from industries import oil_refinery
 oil_refinery.industry.register()
 
 from industries import oil_rig
 oil_rig.industry.register()
+
+from industries import oil_wells
+oil_wells.industry.register()
 
 from industries import orchard_piggery
 orchard_piggery.industry.register()
@@ -268,6 +236,9 @@ petrol_pump.industry.register()
 
 #from industries import phosphoric_acid_plant
 #phosphoric_acid_plant.industry.register()
+
+from industries import plastics_plant
+plastics_plant.industry.register()
 
 # should be one of the polymer plants (pvc?)
 #from industries import plastics_plant
@@ -309,13 +280,11 @@ recycling_plant.industry.register()
 #from industries import rubber_plantation
 #rubber_plantation.industry.register()
 
-
 #from industries import salt_mine
 #salt_mine.industry.register()
 
 from industries import sawmill
 sawmill.industry.register()
-
 
 from industries import sheep_farm
 sheep_farm.industry.register()
@@ -329,7 +298,6 @@ sheep_farm.industry.register()
 #from industries import soda_ash_mine
 #soda_ash_mine.industry.register()
 
-
 #from industries import solvay_plant
 #solvay_plant.industry.register()
 
@@ -342,8 +310,8 @@ smithy_forge.industry.register()
 from industries import stockyard
 stockyard.industry.register()
 
-#from industries import sugar_refinery
-#sugar_refinery.industry.register()
+from industries import sugar_refinery
+sugar_refinery.industry.register()
 
 #from industries import sulphuric_acid_plant
 #sulphuric_acid_plant.industry.register()

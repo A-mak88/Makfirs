@@ -290,11 +290,11 @@ from cargos import pipe
 pipe.cargo.register()
 """
 
-#from cargos import plant_fibres
-#plant_fibres.cargo.register()
+from cargos import plant_fibres
+plant_fibres.cargo.register()
 
-#from cargos import plastics
-#plastics.cargo.register()
+from cargos import plastics
+plastics.cargo.register()
 
 #from cargos import potash
 #potash.cargo.register()
@@ -370,13 +370,11 @@ from cargos import sulphuric_acid
 sulphuric_acid.cargo.register()
 """
 
-#from cargos import sugar_beet
-#sugar_beet.cargo.register()
+from cargos import sugar_beet
+sugar_beet.cargo.register()
 
-""" BLTC
 from cargos import textiles
 textiles.cargo.register()
-"""
 
 """ BLTC
 from cargos import tin

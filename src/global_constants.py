@@ -26,7 +26,7 @@ industry_numeric_ids = dict(sawmill = 0, #Year 1
                             smithy_forge = 24, #1
                             chemical_plant = 25,
                             general_store = 26,
-                            food_market = 27, 
+                            food_market = 27,
                             hardware_store = 28,
                             builders_yard = 29,
                             bulk_terminal = 30, #1
@@ -49,21 +49,23 @@ industry_numeric_ids = dict(sawmill = 0, #Year 1
                             petrol_pump = 47, #1900
                             recycling_plant = 48, #1978
                             recycling_depot = 49, #1978
-                            biorefinery = 50 #2001
+                            biorefinery = 50, #2001
+                            farm = 51,
+                            sugar_refinery = 52,
+                            food_processor = 53,
+                            plastics_plant = 54
+                            #fertiliser_plant = 106,
+                            #salt_mine = 105,
                             #factory_1 = 100,
                             #factory_2 = 101,
                             #factory_3 = 102,
                             #herding_coop = 85,
-                            #farm = 29,
                             #ranch = 48,
                             #coffee_estate = 50,
                             #vineyard = 68,
                             #rubber_plantation = 53,
-                            #!sugar_refinery = 19,
-                            #food_processor = 56,
                             #!aluminium_plant = 8,
                             #cryo_plant = 3,
-                            #salt_mine = 105,
                             #limestone_mine = 54,
                             #assembly_plant = 62,
                             #copper_mine = 64,
@@ -80,7 +82,6 @@ industry_numeric_ids = dict(sawmill = 0, #Year 1
                             #!steel_mill = 2,
                             #!metal_workshop = 9,
                             #!furniture_factory = 13,
-                            #!plastics_plant = 18,
                             #ammonia_plant = 40,
                             #liquids_terminal = 74,
                             #!lime_kiln = 77,
@@ -105,7 +106,6 @@ industry_numeric_ids = dict(sawmill = 0, #Year 1
                             #ethylene_cracker = 99,
                             #sheet_and_pipe_mill = 103,
                             #solvay_plant = 104,
-                            #fertiliser_plant = 106,
                             #phosphoric_acid_plant = 108,
                             #sulphuric_acid_plant = 109,
                             #polypropylene_plant = 110,
@@ -120,7 +120,7 @@ industry_numeric_ids = dict(sawmill = 0, #Year 1
 
 # Definition of industry tile numeric IDs
 # tiles 0-xxx currently vacant
-tile_numeric_ids = dict(coal_pit_tile_1 = 89,
+tile_numeric_ids = dict(coal_pit_tile_1 = 89, #metal_fabrication_plant_tile_1 = 200,
                         polyethylene_plant_tile_1 = 90,
                         polypropylene_plant_tile_1 = 91,
                         sulphuric_acid_plant_tile_1 = 92,
