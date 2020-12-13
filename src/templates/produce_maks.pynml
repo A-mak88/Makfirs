@@ -1,92 +1,23 @@
-<tal:economies repeat="economy economies">
-    produce (${industry.id}_produce_${economy.numeric_id},
-        [
-            <tal:subtract repeat="cargo industry.get_property('accept_cargos_with_input_ratios', economy)">
-                <!--! !!! assume just subtracting all for now, don't faff around with remaindered amounts -->
-                ${cargo[0]}: incoming_cargo_waiting("${cargo[0]}");
-            </tal:subtract>
-        ],
-        [
-            <tal:produce repeat="cargo industry.get_property('prod_cargo_types_with_output_ratios', economy)">
-                ${cargo[0]}: (LOAD_PERM(${industry.perm_storage.total_cargo_to_distribute_this_cycle}) * ${cargo[1]}) / 8;
-            </tal:produce>
-        ],
-    0)
+produce(consume_all_prod,
+    // Consume the full amount of all waiting cargos (stored by factory_production_switch below).
+    [FOOD: LOAD_TEMP(1); PEAT: LOAD_TEMP(2); WOOD: LOAD_TEMP(3);],
+    // Produce farmsup from food and peat, pass from wood.
+    [FMSP: LOAD_TEMP(1) / 2 + LOAD_TEMP(2); PASS: LOAD_TEMP(3) * 2;],
+    0
+)
 
-    switch (FEAT_INDUSTRIES, SELF, ${industry.id}_produce_calculation_${economy.numeric_id},
-            [
-                <!--! zero the current production ratio, which we will recalculate during this production cycle -->
-                STORE_PERM(0, ${industry.perm_storage.current_production_ratio}),
-                <!--! zero the total production from this cycle, as a starting value-->
-                STORE_PERM(0, ${industry.perm_storage.total_cargo_produced_this_cycle}),
-                <tal:input_cargos repeat="input_cargo industry.get_property('accept_cargos_with_input_ratios', economy)">
-                    <!--! check if this cargo is delivered, and if so, update the last delivery date for it -->
-                    <tal:date_received define="date_received_storage_number getattr(industry.perm_storage, 'date_received_cargo_' + str(repeat.input_cargo.number))">
-                    STORE_PERM(
-                        max(LOAD_PERM(${date_received_storage_number}), (incoming_cargo_waiting("${input_cargo[0]}") > 0) * current_date),
-                        ${date_received_storage_number}
-                    ),
-                    <!--! if this cargo was delivered, increase the total production ratio appropriately -->
-                    STORE_PERM(
-                        LOAD_PERM(${industry.perm_storage.current_production_ratio})
-                        + (
-                            (current_date - LOAD_PERM(${date_received_storage_number})) <= ${global_constants.secondary_production_span}
-                            ? ${input_cargo[1]} : 0
-                        ),
-                        ${industry.perm_storage.current_production_ratio}
-                    ),
-                    </tal:date_received>
-                </tal:input_cargos>
-                <!--! add to total amount produced;
-                      note that production_ratio is a value 0..8, and is divided by 8 in the calculation here - this is to account for integer maths
-                      note also that this has to be in a separate loop to the ratio calculation, have sum ratio over all input cargos before calculating production from each input cargo
-                -->
-                <tal:total_production repeat="input_cargo industry.get_property('accept_cargos_with_input_ratios', economy)">
-                    STORE_PERM(
-                        LOAD_PERM(${industry.perm_storage.total_cargo_produced_this_cycle})
-                        + ((incoming_cargo_waiting("${input_cargo[0]}") * LOAD_PERM(${industry.perm_storage.current_production_ratio})) / 8),
-                        ${industry.perm_storage.total_cargo_produced_this_cycle}
-                    ),
-                </tal:total_production>
-                <!--! when low cargo amounts are delivered, it's possible that final output cargo amounts < 1, which means no cargo is distributed
-                      prevent that by stockpiling produced cargo on each production cycle until there is enough to distribute
-                      the case is triggered by low amounts being moved to the produce cycle as a vehicle gradually unloads, and was noticeable with Road Hog trams
-                -->
-                STORE_PERM(
-                    LOAD_PERM(${industry.perm_storage.total_produced_cargo_available}) + LOAD_PERM(${industry.perm_storage.total_cargo_produced_this_cycle}),
-                    ${industry.perm_storage.total_produced_cargo_available}
-                ),
-                <!--! then check min. distributed by dividing over 8, to get the amount divided by max possible output cargos
-                      8 is the pathological case, this could be made more accurate by checking the lowest output ratio in current economy
-                      for accuracy, this could also store remainders using mod(8) or so, but eh, TMWFTLB?
-                -->
+produce(do_nothing_prod, [], [])
 
-                <!--! OOF, this needs to both assign total_cargo_to_distribute_this_cycle if > 1, and clear total_produced_cargo_available if > 1 -->
-                STORE_PERM(
-                    (LOAD_PERM(${industry.perm_storage.total_produced_cargo_available}) / 8) >= 1
-                    ? LOAD_PERM(${industry.perm_storage.total_produced_cargo_available}) : 0,
-                    ${industry.perm_storage.total_cargo_to_distribute_this_cycle}
-                ),
-                STORE_PERM(
-                    (LOAD_PERM(${industry.perm_storage.total_produced_cargo_available}) / 8) >= 1
-                    ? 0 : LOAD_PERM(${industry.perm_storage.total_produced_cargo_available}),
-                    ${industry.perm_storage.total_produced_cargo_available}
-                ),
-                <!--! if any cargo was produced, reset the closure countdown  -->
-                <!--! !! unclear if this is working, separate closure template needs updated for n cargos, currently depends on 3 -->
-                STORE_PERM(
-                    (LOAD_PERM(${industry.perm_storage.total_cargo_produced_this_cycle}) == 0)
-                    ? LOAD_PERM(${industry.perm_storage.closure_counter}) : 0,
-                    ${industry.perm_storage.closure_counter}
-                ),
-            ]) {
-        ${industry.id}_produce_${economy.numeric_id};
-    }
-</tal:economies>
-
-switch (FEAT_INDUSTRIES, SELF, ${industry.id}_produce_cargo_arrival, economy) {
-    <tal:economies repeat="economy economies">
-        ${economy.numeric_id}: ${industry.id}_produce_calculation_${economy.numeric_id};
-    </tal:economies>
+// Make the factory produce cargo only when coal is delivered.
+// Other cargos will be stockpiled until then.
+switch(FEAT_INDUSTRIES, SELF, factory_production_switch, [
+    STORE_TEMP(incoming_cargo_waiting("FOOD"), 1),
+    STORE_TEMP(incoming_cargo_waiting("PEAT"), 2),
+    STORE_TEMP(incoming_cargo_waiting("WOOD"), 3),
+    incoming_cargo_waiting("WOOD")
+]) {
+    // If no coal, don't produce anything.
+    0: do_nothing_prod;
+    // Otherwise consume all waiting cargo.
+    consume_all_prod;
 }
-

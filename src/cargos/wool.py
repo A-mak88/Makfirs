@@ -15,6 +15,6 @@ cargo = Cargo(id='wool',
               items_of_cargo='string(STR_CARGO_UNIT_WOOL)',
               penalty_lowerbound='20',
               single_penalty_length='100',
-              price_factor=51,
+              price_factor=52,
               capacity_multiplier='1',
               icon_indices=(4, 1))
