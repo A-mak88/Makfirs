@@ -220,10 +220,10 @@ class DocHelper(object):
         return palette[int(industry.get_property('map_colour', None))]
 
     def get_cargoflow_banned_cargos(self):
-        return ['mail', 'passengers']
+        return ['mail', 'passengers', 'peat', 'recyclables']
 
     def get_cargoflow_supply_cargos(self):
-        return ['farm_supplies', 'engineering_supplies']
+        return ['farm_supplies', 'engineering_supplies', 'water', 'electricity']
 
     def get_active_nav(self, doc_name, nav_link):
         return ('','active')[doc_name == nav_link]

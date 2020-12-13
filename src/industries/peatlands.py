@@ -1,12 +1,12 @@
 from industry import IndustryPrimaryExtractive, TileLocationChecks
 
 industry = IndustryPrimaryExtractive(id='peatlands',
-                                     prod_cargo_types_with_multipliers=[('PEAT', 4)],
+                                     prod_cargo_types_with_multipliers=[('PEAT', 2)],
                                      prob_in_game='7',
                                      prob_map_gen='7',
                                      map_colour='72',
                                      # Clusters cause min distance not to work, need to learn more.
-                                     location_checks=dict(industry_max_distance=['trading_post', 150], industry_min_distance=['trading_post', 20], same_type_distance=2),
+                                     location_checks=dict(industry_max_distance=['trading_post', 60], industry_min_distance=['trading_post', 5], same_type_distance=2),
                                      prospect_chance='0.75',
                                      name='string(STR_IND_PEATLANDS)',
                                      nearby_station_name='string(STR_IND_PEATLANDS)',

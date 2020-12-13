@@ -1,14 +1,14 @@
-from industry import IndustryPrimaryPort, TileLocationChecks
+from industry import Industrymaks, TileLocationChecks
 
-industry = IndustryPrimaryPort(id='trading_post',
-                               accept_cargo_types=['FOOD', 'GOOD', 'BEER', 'TEXT', 'PEAT', 'MAIL', 'ELEC'],
-                               prod_cargo_types_with_multipliers=[('FMSP', 2)],
+industry = Industrymaks(id='trading_post',
+                               accept_cargos_with_input_ratios=[('FOOD', 6), ('PEAT', 2)],
+                               combined_cargos_boost_prod=True,
+                               prod_cargo_types_with_output_ratios=[('FMSP', 1), ('PASS', 1)],
                                prob_in_game='2',
                                prob_map_gen='6',
                                map_colour='37',
                                special_flags=['IND_FLAG_BUILT_ON_WATER'],
-                               location_checks=dict(same_type_distance=16),
-                               prospect_chance='0.75',
+                               location_checks=dict(same_type_distance=160),
                                name='string(STR_IND_TRADING_POST)',
                                nearby_station_name='string(STR_STATION_INDUSTRY_HARBOUR_3)',
                                fund_cost_multiplier='152',

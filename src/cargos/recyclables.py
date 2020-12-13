@@ -14,8 +14,8 @@ cargo = Cargo(id='recyclables',
               units_of_cargo='TTD_STR_TONS',
               items_of_cargo='string(STR_CARGO_UNIT_RECYCLABLES)',
               penalty_lowerbound='255',
-              single_penalty_length='100',
+              single_penalty_length='255',
               capacity_multiplier='1',
-              price_factor=31,
+              price_factor=30,
               icon_indices=(10, 3))
               

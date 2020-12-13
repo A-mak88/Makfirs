@@ -1,4 +1,4 @@
-/*************SECONDARY INDUSTRY*********/
+/*************INDUSTRY MAK*********/
 
 /* ******************************************************************
  * Definition of the industry tile, its callbacks, and graphics chain
@@ -29,19 +29,19 @@
  * !!!!!!!!PRODUCTION BELOW!!!!!!!!!!
  * *************************************************/
 
-<tal:include metal:use-macro="load: produce_mak.pynml" />
+<tal:include metal:use-macro="load: produce_maks.pynml" />
 
 /* *************************************************
  * !!!!!!!CLOSURE BELOW!!!!!!!!
  * *************************************************/
 
-<!--! <tal:include metal:use-macro="load: closure_secondary.pynml" /> -->
+<!--! <tal:include metal:use-macro="load: closure_maks.pynml" /> -->
 
 /* *************************************************
  * !!!!!!!!!!!!EXTRA TEXT BELOW!!!!!!!!!!!
  * *************************************************/
 
-<tal:include metal:use-macro="load: extra_text_secondary.pynml" />
+<tal:include metal:use-macro="load: extra_text_maks.pynml" />
 
 /* *************************************************
  * !!!!!!!!!!!!!!!AVAILABILITY BELOW!!!!!!!!
