@@ -9,5 +9,5 @@ switch(FEAT_INDUSTRIES, SELF, ${industry.id}_extra_text,
         // Put the production amount on the textstack for use in a string parameter.
         // See https://newgrf-specs.tt-wiki.net/wiki/NML:Language_files#String_parameters
         [STORE_TEMP(this_month_production("PASS"), 256)]) {
-        return string(STR_CARGO_SUBTYPE_DISPLAY_SECONDARY_CARGO_DELIVERED);
+        return string(STR_INDUSTRY_EXTRA_TEXT);
 }

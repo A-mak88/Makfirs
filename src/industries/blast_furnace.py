@@ -1,7 +1,7 @@
 from industry import IndustrySecondary, TileLocationChecks
 
 industry = IndustrySecondary(id='blast_furnace',
-                             accept_cargos_with_input_ratios=[('IORE', 3), ('COAL', 2), ('SCMT', 3), ('WATR', 0), ('ELEC', 0), ('PASS', 0)],
+                             accept_cargos_with_input_ratios=[('IORE', 3), ('COKE', 2), ('SCMT', 3), ('WATR', 0), ('ELEC', 0), ('PASS', 0)],
                              combined_cargos_boost_prod=True,
                              prod_cargo_types_with_output_ratios=[('METL', 8), ('PASS', 1)],
                              prob_in_game='1',

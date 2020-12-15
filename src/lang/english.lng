@@ -448,6 +448,7 @@ STR_IND_VEHICLE_DISTRIBUTOR                                                     
 STR_IND_WHARF                                                                   :Wharf
 STR_IND_WIRE_AND_SECTION_MILL                                                   :Wire and Section Mill
 
+STR_INDUSTRY_EXTRA_TEXT                                                         :{}Goods produced this month: {YELLOW}{SIGNED_WORD}
 
 STR_CARGO_SUBTYPE_DISPLAY_SECONDARY_CARGO_DELIVERED                             : {BLACK}(supplied)
 STR_EXTRA_TEXT_SECONDARY_NON_COMBINATORY                                        :{BLACK}Produces at maximum rate if {WHITE}any {BLACK}required cargo is supplied.
