@@ -3,7 +3,7 @@ from industry import Industrymaks, TileLocationChecks
 industry = Industrymaks(id='trading_post',
                                accept_cargos_with_input_ratios=[('FOOD', 4), ('PEAT', 4), ('WDPR', 1)],
                                combined_cargos_boost_prod=True,
-                               prod_cargo_types_with_output_ratios=[('FMSP', 0), ('PASS', 0)],
+                               prod_cargo_types_with_output_ratios=[('FMSP', 1), ('PASS', 10)],
                                prob_in_game='2',
                                prob_map_gen='6',
                                map_colour='37',

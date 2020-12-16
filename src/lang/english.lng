@@ -224,7 +224,7 @@ STR_CARGO_UNIT_YARN                                                             
 STR_CARGO_UNIT_ZINC                                                             :{WEIGHT} of zinc
 TTD_STR_QUANTITY_WATER                                                          :{VOLUME} of water
 STR_CARGO_UNIT_STEAM                                                            :{VOLUME} of steam
-STR_CARGO_UNIT_ELECTRICITY                                                      :{SIGNED_WORD} unit{P 0 "" s} of Electricity
+STR_CARGO_UNIT_ELECTRICITY                                                      :{POWER} of Electricity
 
 # it seems that using 2 chars for these is a convention not a limit, I tested 4 chars and OpenTTD renders it fine - May 2020
 STR_CID_ACID                                                                    :{TINYFONT}AC
@@ -448,9 +448,10 @@ STR_IND_VEHICLE_DISTRIBUTOR                                                     
 STR_IND_WHARF                                                                   :Wharf
 STR_IND_WIRE_AND_SECTION_MILL                                                   :Wire and Section Mill
 
-STR_INDUSTRY_EXTRA_TEXT                                                         :{}Goods produced this month: {YELLOW}{SIGNED_WORD}
+STR_CARGO_PERMSTORAGE_DISPLAY                                                   : {LORRY}{YELLOW}{UNSIGNED_WORD} Test
+STR_CARGO_SUBTYPE_DISPLAY_SECONDARY_CARGO_DELIVERED1                             :{BLACK}16 required
 
-STR_CARGO_SUBTYPE_DISPLAY_SECONDARY_CARGO_DELIVERED                             : {BLACK}(supplied)
+STR_CARGO_SUBTYPE_DISPLAY_SECONDARY_CARGO_DELIVERED                             :{BLACK}(supplied)
 STR_EXTRA_TEXT_SECONDARY_NON_COMBINATORY                                        :{BLACK}Produces at maximum rate if {WHITE}any {BLACK}required cargo is supplied.
 STR_EXTRA_TEXT_SECONDARY_COMBINATORY                                            :{BLACK}For maximum production rate, supply {WHITE}all {BLACK}required cargos at least once every three months.
 STR_EXTRA_TEXT_TOWN_PRODUCER                                                    :{BLACK}Production is proportional to town population. At least {WHITE}{SIGNED_WORD} units{BLACK} and not more than {WHITE}{SIGNED_WORD} units{BLACK} of cargo will be produced every month.

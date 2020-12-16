@@ -15,11 +15,6 @@ switch(FEAT_INDUSTRIES, SELF, ${industry.id}_extra_text, [
     The 0x3800 expressions here are related to using extended cb 37 before nml support was added, and can be removed when nml is updated
 -->
 
-<!--!
-    Additional text after the cargos in the industry window (callback 37)
-    The 0x3800 expressions here are related to using extended cb 37 before nml support was added, and can be removed when nml is updated
--->
-
 <tal:economies repeat="economy economies">
     <tal:industry_on_or_off condition="industry.get_property('enabled', economy) == True">
         <!--! up to 8 cargos, n.b. date register names are indexed to 1 not 0 -->
