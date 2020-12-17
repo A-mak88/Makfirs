@@ -1238,24 +1238,7 @@ class Industrymaks(Industry):
         super().__init__(**kwargs)
         self.template = kwargs.get('template', 'industry_maks.pynml')
         self.combined_cargos_boost_prod = kwargs.get('combined_cargos_boost_prod', False)
-        self.perm_storage = IndustryPermStorage(['closure_counter', # months without delivery, same as primary industries
-                                                 'current_production_ratio', # in format n/8, calculated during prod cycle, permanent register used for ease of debugging
-                                                 'total_cargo_produced_this_cycle', # calculated during prod cycle, permanent register used for ease of debugging
-                                                 # date of last cargo delivery, per cargo (max 8 input cargos)
-                                                 'date_received_cargo_1',
-                                                 'date_received_cargo_2',
-                                                 'date_received_cargo_3',
-                                                 'date_received_cargo_4',
-                                                 'date_received_cargo_5',
-                                                 'date_received_cargo_6',
-                                                 'date_received_cargo_7',
-                                                 'date_received_cargo_8',
-                                                 'total_cargo_to_distribute_this_cycle',
-                                                 'total_produced_cargo_available',
-                                                 'unused',
-                                                 'unused',
-                                                 'unused',
-                                                 ])
+
         # guard against prospect chance kword being set, it's pure cruft for secondary industry (harmless, but needless)
         if 'prospect_chance' in kwargs:
             utils.echo_message("prospect_chance passed in kwargs for " + self.id + "; secondary industries should not set prospect_chance")

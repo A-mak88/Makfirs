@@ -448,8 +448,12 @@ STR_IND_VEHICLE_DISTRIBUTOR                                                     
 STR_IND_WHARF                                                                   :Wharf
 STR_IND_WIRE_AND_SECTION_MILL                                                   :Wire and Section Mill
 
-STR_CARGO_PERMSTORAGE_DISPLAY                                                   : {LORRY}{YELLOW}{UNSIGNED_WORD} Test
-STR_CARGO_SUBTYPE_DISPLAY_SECONDARY_CARGO_DELIVERED1                             :{BLACK}16 required
+STR_CONCAT                                                :{STRING}{}{STRING}
+STR_CARGO_PERMSTORAGE_DISPLAY                                                   : {BLACK}16 required
+STR_CARGO_SUBTYPE_DISPLAY_SECONDARY_CARGO_DELIVERED1                             :{}{LORRY}Farm Supply in storage: {RED}{SIGNED_WORD}
+STR_CARGO_SUBTYPE_DISPLAY_SECONDARY_CARGO_DELIVERED2                             :{}{LORRY}PASS in storage: {GREEN}{SIGNED_WORD}
+STR_CARGO_SUBTYPE_DISPLAY_SECONDARY_CARGO_DELIVERED3                             :{}{LORRY}PASSPerm6 in storage: {GREEN}{SIGNED_WORD}
+STR_CARGO_SUBTYPE_DISPLAY_SECONDARY_CARGO_DELIVERED4                             :{}{LORRY}FMSPPerm4 in storage: {GREEN}{SIGNED_WORD}
 
 STR_CARGO_SUBTYPE_DISPLAY_SECONDARY_CARGO_DELIVERED                             :{BLACK}(supplied)
 STR_EXTRA_TEXT_SECONDARY_NON_COMBINATORY                                        :{BLACK}Produces at maximum rate if {WHITE}any {BLACK}required cargo is supplied.
